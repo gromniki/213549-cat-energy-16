@@ -39,6 +39,37 @@
 - https://yoksel.github.io/bad-practices/font-styles – HTML & CSS: как не надо. Разбор самых частых ошибок
     начинающих и способы их избежать.
 
+## Лекция 2. Методологии вёрстки
+### БЭМ
+- https://web-standards.ru/articles/cargo-cult-css – Культ карго CSS.
+- https://web-standards.ru/articles/css-architecture – Архитектура CSS.
+- https://habr.com/company/yandex/blog/276035 – БЭМ-методология: с чего всё начиналось и зачем это всё нужно.
+- http://vitaly.harisov.name/article/independent-blocks.html – Вёрстка независимыми блоками.
+- https://ru.bem.info/methodology/key-concepts – БЭМ: основные понятия.
+- https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html – БЭМантика: пишите осмысленные
+    стили без повторов.
+- https://github.com/FrontenderMagazine/the-art-of-html-semantics-pt1/blob/master/rus.md – Искусство семантики HTML.
+- http://nicolasgallagher.com/about-html-semantics-front-end-architecture – About HTML semantics and front-end architecture.
+- https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax – MindBEMding — getting your head
+    ’round BEM syntax.
+- https://ru.bem.info/methodology/block-modification – Способы изменения блока.
+- https://vk.cc/9eRXXo – Комбинированные селекторы.
+- https://htmlacademy.ru/shorts/5 – Зачем нужен БЭМ.
+### Стиль кодирования
+- http://codeguide.academy – Стиль кода Академии HTML.
+- https://htmlacademy.ru/blog/62-codeguide-why-what-and-how – Кодгайд: почему, зачем и как?
+- https://cssguidelin.es – CSS Guidelines Гарри Робертса.
+- https://github.com/iamstarkov/CSS-Guidelines/blob/master/README%20Russian.md – Основные правила и принципы написания CSS.
+- https://github.com/necolas/idiomatic-css/tree/master/translations/ru-RU – Принципы написания однородного CSS-кода.
+- https://editorconfig.org – EditorConfig.
+- https://habr.com/ru/post/220131 – EditorConfig — одни настройки для всех редакторов.
+- https://stylelint.io – Stylelint.
+- https://prettier.io – Prettier.
+- https://github.com/morishitter/stylefmt – Stylefmt.
+- https://stylelint.io/user-guide/cli/#autofixing-errors – --fix.
+### Разное
+- https://github.com/yoksel/common-words – Слова, часто используемые в CSS-классах.
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
