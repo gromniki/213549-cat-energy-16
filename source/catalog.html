@@ -12,14 +12,14 @@
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list  site-list">
-        <li class="site-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item  site-list__item--active">
+        <li class="main-nav__item  main-nav__item--active">
           <a>Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="program.html">Подбор программы</a>
         </li>
       </ul>
@@ -32,53 +32,45 @@
     <div class="products__wrapper">
       <h1 class="products__title">Каталог продукции</h1>
       <ul class="products__list">
-        <li class="products__item">
-          <a class="products__image-wrapper" href="product.html">
-            <img class="products__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy PRO 500 г">
+        <li class="products__item  product">
+          <a class="product__image-wrapper" href="product.html">
+            <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy PRO 500 г">
           </a>
           <div class="features">
-            <h3 class="features__title">
+            <h3 class="product__title  features__title">
               <a href="product.html">Cat Energy PRO 500 г</a>
             </h3>
-            <table class="features__list">
-              <tr>
-                <td class="features__value">Объем</td>
-                <td class="features__field">500 г</td>
-              </tr>
-              <tr>
-                <td class="features__value">Вкус</td>
-                <td class="features__field">Курица</td>
-              </tr>
-              <tr>
-                <td class="features__value">Цена</td>
-                <td class="features__field">700 Р.</td>
-              </tr>
-            </table>
+            <dl class="features__list">
+              <dt class="features__value">Объем</dt>
+              <dd class="features__field">500 г</dd>
+
+              <dt class="features__value">Вкус</dt>
+              <dd class="features__field">Курица</dd>
+
+              <dt class="features__value">Цена</dt>
+              <dd class="features__field">700 Р.</dd>
+            </dl>
           </div>
           <a class="btn  products__link" href="order.html">Заказать</a>
         </li>
-        <li class="products__item">
-          <a class="products__image-wrapper" href="product.html">
-            <img class="products__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy PRO 1000 г">
+        <li class="products__item  product">
+          <a class="product__image-wrapper" href="product.html">
+            <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy PRO 1000 г">
           </a>
           <div class="features">
-            <h3 class="features__title">
+            <h3 class="product__title  features__title">
               <a href="product.html">Cat Energy PRO 1000 г</a>
             </h3>
-            <table class="features__list">
-              <tr>
-                <td class="features__value">Объем</td>
-                <td class="features__field">1000 г</td>
-              </tr>
-              <tr>
-                <td class="features__value">Вкус</td>
-                <td class="features__field">Курица</td>
-              </tr>
-              <tr>
-                <td class="features__value">Цена</td>
-                <td class="features__field">1000 Р.</td>
-              </tr>
-            </table>
+            <dl class="features__list">
+              <dt class="features__value">Объем</dt>
+              <dd class="features__field">1000 г</dd>
+
+              <dt class="features__value">Вкус</dt>
+              <dd class="features__field">Курица</dd>
+
+              <dt class="features__value">Цена</dt>
+              <dd class="features__field">1000 Р.</dd>
+            </dl>
           </div>
           <a class="btn  products__link" href="order.html">Заказать</a>
         </li>
@@ -86,7 +78,7 @@
       <div class="products__more">
         <b>Показать еще 100500 товаров</b>
         <small>На самом деле вкусов гораздо больше!</small>
-        <a class="btn  btn--grey" href="new-products.html">Показать все</a>
+        <a class="btn  btn--grey" href="all-products.html">Показать все</a>
       </div>
     </div>
   </section>
@@ -98,24 +90,20 @@
         <li class="supplement-goods__item">
           <div class="features">
             <h3 class="features__title"><a href="product.html">Сахарозаменитель</a></h3>
-            <table class="features__list">
-              <tr>
-                <td class="features__value">1 упаковка (100 г)</td>
-                <td class="features__field">200 Р.</td>
-              </tr>
-            </table>
+            <dl class="features__list">
+              <dt class="features__value">1 упаковка (100 г)</dt>
+              <dd class="features__field">200 Р.</dd>
+            </dl>
           </div>
           <a class="btn  supplement-goods__link" href="order.html">Заказать</a>
         </li>
         <li class="supplement-goods__item">
           <div class="features">
             <h3 class="features__title"><a href="product.html">Питьевая вода</a></h3>
-
             <dl class="features__list">
               <dt class="features__value">5 литров</dt>
               <dd class="features__field">50 Р.</dd>
             </dl>
-
           </div>
           <a class="btn  supplement-goods__link" href="order.html">Заказать</a>
         </li>
