@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/scaffolding";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+
+@import "blocks/page-main";
+@import "blocks/promo";
+@import "blocks/categories";
+@import "blocks/description";
+@import "blocks/showcase";
+@import "blocks/stats";
+@import "blocks/slider";
+@import "blocks/contacts";
+
+@import "blocks/products";
+@import "blocks/features";
+@import "blocks/supplement-goods";
+@import "blocks/banner";
+
+@import "blocks/page-footer";
+@import "blocks/social";
+
+@import "blocks/modal";
