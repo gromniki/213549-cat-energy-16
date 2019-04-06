@@ -1,0 +1,23 @@
+.promo {
+  padding-top: 30px;
+  font-family: $fontOswald;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: $default-color;
+  background: $success-color url("../img/index-background-mobile@1x.jpg") no-repeat;
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 36px;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  &__slogan {
+    font-size: 14px;
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: inherit;
+  }
+}
