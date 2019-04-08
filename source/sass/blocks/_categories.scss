@@ -10,7 +10,6 @@
 
   &__title {
     position: relative;
-    z-index: 20;
     margin: 0 0 30px;
     padding: 7px 0 7px 70px;
     font-family: $fontOswald;
@@ -19,24 +18,34 @@
     text-transform: uppercase;
     line-height: 37px;
 
-    &::before {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 19;
       width: 50px;
       height: 50px;
+    }
+
+    &::before {
       background-color: $success-color;
       border-radius: 50%;
     }
 
     &--cat {
-      background: url("../img/icon-cat-slim.svg") no-repeat 0 center;
+      &::after {
+        top: -4px;
+        background: url("../img/icon-cat-slim.svg") no-repeat center;
+      }
     }
 
     &--tiger {
-      background: url("../img/icon-cat-pro.svg") no-repeat 0 center / 8%;
+      &::after {
+        left: -10px;
+        width: 65px;
+        background: url("../img/icon-cat-pro.svg") no-repeat center;
+      }
     }
   }
 
