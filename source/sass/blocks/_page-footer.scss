@@ -8,8 +8,10 @@
   }
 
   &__logo {
+    display: inline-block;
     padding: 40px 0 25px;
     text-align: center;
+    vertical-align: middle;
   }
 
   &__social {
