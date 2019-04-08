@@ -1,0 +1,22 @@
+.page-footer {
+  font-weight: 400;
+  background-color: $default-secondary;
+
+  &__logo,
+  &__social {
+    border-bottom: 1px solid $border-base;
+  }
+
+  &__logo {
+    padding: 40px 0 25px;
+    text-align: center;
+  }
+
+  &__social {
+    padding: 22px 0 20px;
+  }
+
+  &__copyright {
+    padding: 10px 0;
+  }
+}

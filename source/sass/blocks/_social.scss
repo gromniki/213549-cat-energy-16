@@ -1,0 +1,38 @@
+.social {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      outline: none;
+
+      .social__path {
+        fill: $success-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__path {
+    fill: $neutral-regular;
+  }
+}
