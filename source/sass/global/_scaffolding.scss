@@ -69,4 +69,18 @@ input[type="radio"].visually-hidden {
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+  
+  &--grey {
+    color: $fontColor;
+    background-color: $default-secondary;
+
+    &:hover,
+    &:focus {
+      background-color: $border-light;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
 }
