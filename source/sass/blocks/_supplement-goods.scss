@@ -1,3 +1,25 @@
 .supplement-goods {
-  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: $fontColorSecondary;
+
+  &__title {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 0 20px;
+    font-family: $fontOswald;
+    font-size: 24px;
+    font-weight: inherit;
+    line-height: 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 3px;
+      background-color: $success-color;
+    }
+  }
 }

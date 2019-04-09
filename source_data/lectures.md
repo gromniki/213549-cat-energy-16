@@ -5,7 +5,6 @@
 ## Лекция 1. Вводная
 ### Редакторы кода
 - https://htmlacademy.ru/blog/40-editors-for-the-coders – Обзор редакторов для верстальщика.
-### Работа с консолью на Windows и не только
 - https://cmder.net – Cmder — консоль для Windows.
 - https://htmlacademy.ru/blog/83-installing-the-console-on-windows – Установка cmder на Windows.
 - https://isqua.ru/blog/2016/11/05/nastroika-tierminala-cmder-v-windows – Настройка cmder на Windows.
@@ -33,10 +32,12 @@
 - https://medium.com/devschacht/node-hero-chapter-1-239f7afeb1d1 – Node Hero: начало работы с Node.js.
 ### Полезные статьи
 - http://codeguide.academy/html-css.html – Стиль кода HTML Academy.
-- https://yoksel.github.io/bad-practices/font-styles – HTML & CSS: как не надо. Разбор самых частых ошибок
-    начинающих и способы их избежать.
+- https://yoksel.github.io/bad-practices/font-styles – HTML & CSS: как не надо. Разбор самых частых ошибок начинающих и способы их избежать.
 
 ## Лекция 2. Методологии вёрстки
+### Демки
+- https://up.htmlacademy.ru/adaptive/16/demos/2073#1 – Барбершоп. Разметка главной страницы по БЭМ
+
 ### БЭМ
 - https://web-standards.ru/articles/cargo-cult-css – Культ карго CSS.
 - https://web-standards.ru/articles/css-architecture – Архитектура CSS.
@@ -66,6 +67,8 @@
 - https://github.com/yoksel/common-words – Слова, часто используемые в CSS-классах.
 
 ## Лекция 3. Препроцессоры и автоматизация
+### Скринкасты
+- https://up.htmlacademy.ru/adaptive/16/module/3/screencasts/1 – Карты кода для препроцессоров
 ### Общее
 - https://htmlacademy.ru/shorts/6 – Кастомные свойства.
 - https://csswizardry.com/2016/02/mixins-better-for-performance – Примеси быстрее расширений, доказывает Гарри Робертс.
@@ -81,3 +84,39 @@
 - https://htmlacademy.ru/blog/83-installing-the-console-on-windows – Установка терминала на Windows.
 - https://htmlacademy.ru/blog/87-installing-nodejs – Установка Node.js.
 - https://htmlacademy.ru/blog/88-useful-commands-for-working-with-nodejs – Полезные команды для работы с Node.js.
+
+## Лекция 4. Адаптивные сетки
+### Демки
+- https://up.htmlacademy.ru/adaptive/16/demos/2075#1 – Барбершоп. Адаптивная сетка шапки
+- https://up.htmlacademy.ru/adaptive/16/demos/2077#1 – Барбершоп. Адаптивная сетка навигации
+- https://up.htmlacademy.ru/adaptive/16/demos/2079#1 – Барбершоп. Адаптивная сетка блока «Статистика»
+
+### Несколько статей об адаптивности
+- http://www.lookatme.ru/mag/live/experience-news/209291-responsive – Основные принципы «отзывчивого» веб-дизайна.
+- https://medium.com/swlh/the-joys-and-pains-of-type-on-screen-1dad8dd2eb09 – The joys and pains of type on screen.
+- https://bradfrost.github.io/this-is-responsive/resources.html – Сборник ресурсов по адаптивности.
+- https://habr.com/ru/company/yandex/blog/307064 – 5 распространённых проблем, которые решает адаптивная вёрстка.
+- https://habr.com/ru/post/269419 – Почему Mobile First?
+### Обзор флексбоксов
+- https://htmlacademy.ru/shorts/8 – Кому нужны флексы.
+- https://vimeo.com/67011034 – Флексбокс, теперь понятно.
+- https://pepelsbey.net/pres/flexbox-gotcha – (презентация)
+- https://philipwalton.github.io/solved-by-flexbox – Solved by flexbox.
+- https://www.smashingmagazine.com/2015/03/harnessing-flexbox-for-todays-web-apps – Harnessing flexbox for today’s web apps.
+- https://codepen.io/enxaneta/full/adLPwv – Flexbox playground.
+- https://github.com/philipwalton/flexbugs – Сборник багов.
+### Игры, помогающие понять флексбоксы
+- http://www.flexboxdefense.com – Flexbox defense.
+- http://flexboxfroggy.com/#ru – Flexbox froggy.
+- https://cvan.io/flexboxin5 – Flexbox in 5 minutes.
+### Подробнее о вьюпорте
+- https://www.w3.org/TR/css-device-adapt-1/#at-ruledef-viewport – Будущая спецификация @viewport.
+#### Увлекательное погружение во вьюпорт от Питера-Пола Коха в трёх частях:
+- https://www.quirksmode.org/mobile/viewports.html – A tale of two viewports — part one.
+- https://www.quirksmode.org/mobile/viewports2.html – A tale of two viewports — part two.
+- https://www.quirksmode.org/blog/archives/2010/09/combining_meta.html – Combining meta viewport and media queries.
+### Другое
+- https://www.quirksmode.org/blog/archives/2010/09/combining_meta.html – Ремы, емы, и почему отказ от них  не проблема.
+- https://css-tricks.com/full-width-containers-limited-width-parents – Full Width Containers in Limited Width Parents.
+
+### Лекция 5. Адаптивные декоративные элементы
