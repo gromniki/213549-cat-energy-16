@@ -3,6 +3,19 @@
   font-weight: 400;
   color: $fontColorSecondary;
 
+  &__list {
+    @include reset-list();
+  }
+
+  &__item {
+    padding: 15px 0;
+    border-bottom: 1px solid $border-base;
+
+    &:first-of-type {
+      border-top: 1px solid $border-base;
+    }
+  }
+
   &__title {
     position: relative;
     margin: 0 0 30px;
@@ -15,11 +28,16 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: 60%;
       right: 0;
       width: 50%;
       height: 3px;
       background-color: $success-color;
     }
+  }
+
+  &__link {
+    width: 100%;
+    margin-top: 15px;
   }
 }

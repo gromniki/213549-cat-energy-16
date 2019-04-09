@@ -4,19 +4,25 @@
   color: $fontColorSecondary;
 
   &__title {
-    max-width: 80px;
-    margin: 0 0 20px;
     font-family: $fontOswald;
     font-size: 16px;
     font-weight: inherit;
     text-transform: uppercase;
     line-height: 20px;
+
+    &--margin {
+      margin: 0 0 10px;
+    }
+
+    & > * {
+      color: inherit;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 20px;
+    margin: 0;
   }
 
   &__value,
