@@ -1,3 +1,29 @@
 .banner {
-  margin: 0;
+  position: relative;
+  width: 280px;
+  height: 289px;
+  margin: 0 auto;
+  padding: 20px;
+  color: $default-color;
+  background-image:
+    url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-size: 56px 61px, 100% 100%;
+  background-color: $success-color;
+  background-position: 50% 65px, 100%;
+
+  &__title {
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    min-width: 170px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: inherit;
+    transform: translate(-50%, 0);
+  }
 }
