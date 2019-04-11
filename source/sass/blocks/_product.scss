@@ -1,0 +1,26 @@
+.product {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 20px;
+  font-weight: 400;
+  color: $fontColorSecondary;
+  border-bottom: 1px solid $border-base;
+
+  &:first-of-type {
+    border-top: 1px solid $border-base;
+  }
+
+  &__image-wrapper {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    max-width: 80px;
+    margin: 0 0 20px;
+  }
+
+  &__link {
+    flex-basis: 100%;
+  }
+}

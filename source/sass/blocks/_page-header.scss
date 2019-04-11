@@ -1,0 +1,9 @@
+.page-header {
+  position: relative;
+
+  &__logo {
+    display: inline-block;
+    padding: 12px 20px;
+    vertical-align: middle;
+  }
+}

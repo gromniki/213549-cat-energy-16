@@ -1,0 +1,107 @@
+.main-nav {
+  &__toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    width: 25px;
+    height: 20px;
+    padding: 0;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &--lines {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 25px;
+      height: 2px;
+      background-color: $fontColorSecondary;
+      border-radius: 2px;
+      transform: translate(-50%, -50%);
+      transition-duration: 0.2s;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: $fontColorSecondary;
+        border-radius: 2px;
+        transition-duration: 0.2s;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      span {
+        background-color: $primary-color;
+
+        &::before,
+        &::after {
+          background-color: $primary-color;
+        }
+      }
+    }
+
+    &.active {
+      span {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+          background-color: $fontColorSecondary;
+        }
+
+        &::before {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    font-family: $fontOswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $fontColorSecondary;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 23px 0;
+    font: inherit;
+    border-bottom: 1px solid $border-base;
+
+    &:first-of-type {
+      border-top: 1px solid $border-base;
+    }
+  }
+}

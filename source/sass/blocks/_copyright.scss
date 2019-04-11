@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 400;
+  line-height: 16px;
+  color: $fontColor;
+
+  &__link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      .copyright__path {
+        fill: $success-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__path {
+    fill: $neutral-regular;
+  }
+}

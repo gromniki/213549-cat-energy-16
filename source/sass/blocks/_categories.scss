@@ -1,0 +1,116 @@
+.categories {
+  padding: 10px 0;
+  font-weight: 400;
+  color: $fontColorSecondary;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 7px 0 7px 70px;
+    font-family: $fontOswald;
+    font-size: 24px;
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: 37px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+    }
+
+    &::before {
+      background-color: $success-color;
+      border-radius: 50%;
+    }
+
+    &--cat {
+      &::after {
+        top: -4px;
+        background: url("../img/icon-cat-slim.svg") no-repeat center;
+      }
+    }
+
+    &--tiger {
+      &::after {
+        left: -10px;
+        width: 65px;
+        background: url("../img/icon-cat-pro.svg") no-repeat center;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: $default-secondary;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    height: 35px;
+    padding-top: 20px;
+    font-family: $fontOswald;
+    font-size: 16px;
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: inherit;
+    border-top: 1px solid $border-base;
+
+    &--arrow {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: -50px;
+        width: 25px;
+        height: 12px;
+        background: url("../img/icon-right-arrow-long.svg") no-repeat center / 100%;
+        transition-duration: 0.2s;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      .categories__link--arrow::before {
+        position: absolute;
+        width: 9px;
+        height: 2px;
+        background: $fontColorSecondary;
+      }
+
+      .categories__link--arrow::after {
+        right: -59px;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

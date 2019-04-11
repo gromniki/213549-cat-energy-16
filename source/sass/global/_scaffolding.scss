@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $fontColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 40px;
+  font-family: $fontOswald;
+  font-size: 14px;
+  line-height: 18px;
+  color: $default-color;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  background-color: $success-color;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $success-secondary;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    color: $fontColor;
+    background-color: $default-secondary;
+
+    &:hover,
+    &:focus {
+      background-color: $border-light;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+}

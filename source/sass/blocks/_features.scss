@@ -1,0 +1,43 @@
+.features {
+  flex-basis: 50%;
+  font-weight: 400;
+  color: $fontColorSecondary;
+
+  &__title {
+    font-family: $fontOswald;
+    font-size: 16px;
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: 20px;
+
+    &--margin {
+      margin: 0 0 10px;
+    }
+
+    & > * {
+      color: inherit;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  &__value,
+  &__field {
+    flex-basis: 50%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__field {
+    text-align: right;
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
