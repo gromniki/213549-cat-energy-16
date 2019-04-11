@@ -1,6 +1,9 @@
 .main-nav {
   &__toggle {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
     width: 25px;
     height: 20px;
     padding: 0;
