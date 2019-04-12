@@ -2,8 +2,8 @@
   font-weight: 400;
   background-color: $default-secondary;
 
-  &__logo,
   &__social {
+    border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
   }
 

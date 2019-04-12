@@ -1,6 +1,20 @@
 .page-header {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 55px 110px;
+  }
+
   &__logo {
     display: inline-block;
     padding: 12px 20px;

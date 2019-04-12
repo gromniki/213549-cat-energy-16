@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   padding-bottom: 10px;
   padding-top: 30px;
   font-family: $fontOswald;
@@ -8,10 +9,27 @@
   color: $default-color;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+    min-height: 500px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 696px;
+    padding-top: 230px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right center;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      align-items: flex-start;
+      padding-left: 120px;
+    }
   }
 
   &__title {
@@ -19,6 +37,14 @@
     font-size: 36px;
     font-weight: inherit;
     line-height: inherit;
+
+    @media (min-width: $tablet-width) {
+      max-width: 440px;
+      margin: 0 0 40px;
+      font-size: 60px;
+      text-align: left;
+      color: $fontColorSecondary;
+    }
   }
 
   &__slogan {
@@ -27,9 +53,34 @@
     font-weight: inherit;
     text-transform: uppercase;
     line-height: inherit;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+      font-size: 20px;
+      color: $fontColorSecondary;
+    }
+  }
+
+  &__image {
+    width: 280px;
+    height: 271px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, 0);
+    }
   }
 
   &__link {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 17px 27px;
+      font-size: 20px;
+    }
   }
 }
