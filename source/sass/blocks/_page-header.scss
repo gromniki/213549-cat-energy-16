@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,12 +13,16 @@
     top: 0;
     width: 100%;
     z-index: 3;
-    padding: 55px 110px;
+    padding: 55px 40px;
   }
 
   &__logo {
     display: inline-block;
     padding: 12px 20px;
     vertical-align: middle;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }

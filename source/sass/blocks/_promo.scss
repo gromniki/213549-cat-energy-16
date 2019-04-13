@@ -17,8 +17,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    padding-top: 230px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right center;
+    padding: 0 120px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right center / 50% 100%;
   }
 
   &__wrapper {
@@ -28,6 +28,11 @@
 
     @media (min-width: $tablet-width) {
       align-items: flex-start;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+      min-height: 696px;
     }
   }
 

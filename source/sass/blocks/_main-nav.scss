@@ -117,6 +117,10 @@
       font-weight: 400;
       border-bottom: 2px solid transparent;
 
+      &:last-of-type {
+        margin-right: 0;
+      }
+
       &--active {
         border-bottom: 2px solid $success-color;
       }
