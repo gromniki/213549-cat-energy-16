@@ -3,18 +3,40 @@
   font-weight: 400;
   color: $fontColorSecondary;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    padding: 0 0 60px;
+    border-bottom: 1px solid $border-base;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+
   &__title {
     margin: 0 0 30px;
     font-family: $fontOswald;
     font-size: 36px;
     font-weight: inherit;
     line-height: 60px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+      font-size: 60px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      counter-reset: list;
+    }
   }
 
   &__item {
@@ -24,8 +46,24 @@
     margin-bottom: 20px;
     padding-left: 80px;
 
+    @media (min-width: $tablet-width) {
+      max-width: 245px;
+      min-height: 230px;
+      margin-bottom: 90px;
+      margin-right: 80px;
+      padding: 120px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 50px 0 0;
+    }
+
     &:last-of-type {
       margin-bottom: 0;
+
+      @media (min-width: $desktop-width) {
+        margin-right: 0;
+      }
     }
 
     &::before,
@@ -36,6 +74,11 @@
       left: 0;
       width: 60px;
       height: 60px;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
     }
 
     &::before {
@@ -63,6 +106,23 @@
     &--icon-4 {
       &::after {
         background: url("../img/advantage-clock@1x.png") no-repeat center;
+      }
+    }
+  }
+
+  span {
+    @media (min-width: $tablet-width) {
+      &::before {
+        counter-increment: list;
+        content: "" counter(list);
+        position: absolute;
+        top: -40px;
+        right: -20px;
+        z-index: -1;
+        font-size: 281px;
+        font-family: $fontOswald;
+        line-height: 1;
+        color: $default-secondary;
       }
     }
   }
