@@ -12,12 +12,13 @@
   @media (min-width: $tablet-width) {
     z-index: 2;
     min-height: 500px;
+    padding: 50px 90px 0;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    padding: 0 120px;
+    padding: 0 80px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat right center / 50% 100%;
   }
 
