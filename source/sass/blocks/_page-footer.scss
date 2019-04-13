@@ -2,9 +2,27 @@
   font-weight: 400;
   background-color: $default-secondary;
 
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 150px;
+    }
+  }
+
   &__social {
     border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &__logo {
@@ -12,6 +30,10 @@
     padding: 40px 0 25px;
     text-align: center;
     vertical-align: middle;
+
+    @media (min-width: $tablet-width) {
+      padding: 25px 0;
+    }
   }
 
   &__social {
