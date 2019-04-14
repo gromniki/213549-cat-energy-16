@@ -127,11 +127,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      color: $default-color;
 
-      &--active {
-        border-bottom: 2px solid $default-color;
-      }
     }
 
     &:first-of-type {
@@ -153,6 +149,18 @@
 
       &:active {
         opacity: 0.3;
+      }
+    }
+  }
+
+  &--dark-bg {
+    .main-nav__item {
+      @media (min-width: $desktop-width) {
+        color: $default-color;
+
+        &--active {
+          border-bottom: 2px solid $default-color;
+        }
       }
     }
   }

@@ -17,6 +17,11 @@
     border: none;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    margin: 40px;
+  }
+
   &:first-of-type {
     border-top: 1px solid $border-base;
 

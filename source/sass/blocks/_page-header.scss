@@ -8,12 +8,28 @@
     padding: 25px 30px;
   }
 
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      z-index: 3;
+      transform: translate(-50%, 0);
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    position: absolute;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 55px 40px;
+    /*position: absolute;
     top: 0;
     width: 100%;
     z-index: 3;
-    padding: 55px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 55px 40px;*/
   }
 
   &__logo {
