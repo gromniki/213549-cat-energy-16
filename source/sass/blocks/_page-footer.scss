@@ -17,6 +17,7 @@
   }
 
   &__social {
+    padding: 22px 0 20px;
     border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
 
@@ -34,10 +35,6 @@
     @media (min-width: $tablet-width) {
       padding: 25px 0;
     }
-  }
-
-  &__social {
-    padding: 22px 0 20px;
   }
 
   &__copyright {
