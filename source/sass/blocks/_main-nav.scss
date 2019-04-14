@@ -141,5 +141,19 @@
         border-top: none;
       }
     }
+
+    a[href] {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }

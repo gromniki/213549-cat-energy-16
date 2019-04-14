@@ -3,6 +3,10 @@
   font-weight: 400;
   color: $fontColorSecondary;
 
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 30px;
+  }
+
   &__title {
     margin: 0 0 35px;
     padding: 0 20px;
@@ -10,12 +14,22 @@
     font-size: 36px;
     font-weight: inherit;
     line-height: 60px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 85px;
+      font-size: 60px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__more {
