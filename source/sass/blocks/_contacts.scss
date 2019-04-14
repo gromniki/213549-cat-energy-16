@@ -4,16 +4,59 @@
   line-height: 20px;
   color: $fontColorSecondary;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__title,
+  &__text {
+    max-width: 145px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 155px;
+    }
+  }
+
   &__title {
-    margin: 0 0 25px;
+    margin: 0;
     font-family: $fontOswald;
     font-size: 16px;
     font-weight: inherit;
     text-transform: uppercase;
     line-height: inherit;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 1.25;
+    }
   }
 
   &__text {
+    margin: 0;
+    font-style: normal;
     line-height: inherit;
+    color: $fontColor;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__map {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
