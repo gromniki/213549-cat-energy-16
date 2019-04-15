@@ -49,18 +49,45 @@
   }
 
   &__more {
-    padding: 20px;
-    border-bottom: 1px solid $border-base;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 30px;
+      height: 2px;
+      background-color: $border-base;
+      transform: translate(-50%, 0);
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+      }
+    }
+
+    &::after {
+      top: 26px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+
+      @media (min-width: $tablet-width) {
+        height: 60px;
+      }
+    }
   }
 
   &__heading,
   &__small {
-    display: block;
+    width: 100%;
     text-align: center;
   }
 
   &__heading {
     margin-bottom: 10px;
+    padding-top: 60px;
     font-size: 16px;
     font-weight: inherit;
     line-height: 20px;
