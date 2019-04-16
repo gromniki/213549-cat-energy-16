@@ -12,6 +12,10 @@
   &__item {
     margin-right: 40px;
 
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -29,6 +33,42 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    &--vkontakte {
+      svg {
+        width: 22px;
+        height: 12px;
+
+        @media (min-width: $tablet-width) {
+          width: 30px;
+          height: 16px;
+        }
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 16px;
+        height: 16px;
+
+        @media (min-width: $tablet-width) {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+
+    &--facebook {
+      svg {
+        width: 10px;
+        height: 19px;
+
+        @media (min-width: $tablet-width) {
+          width: 14px;
+          height: 28px;
+        }
+      }
     }
   }
 

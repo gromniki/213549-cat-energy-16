@@ -12,6 +12,10 @@
     border: 0;
     cursor: pointer;
 
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
     &--lines {
       position: absolute;
       top: 50%;
@@ -83,7 +87,7 @@
     font-family: $fontOswald;
     font-size: 20px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     text-transform: uppercase;
     color: $fontColorSecondary;
@@ -93,15 +97,67 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    padding: 23px 0;
+    padding: 23px 20px;
     font: inherit;
     border-bottom: 1px solid $border-base;
 
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+      padding: 8px 0;
+      font-size: 18px;
+      font-weight: 400;
+      border-bottom: 2px solid transparent;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &--active {
+        border-bottom: 2px solid $success-color;
+      }
+    }
+
     &:first-of-type {
       border-top: 1px solid $border-base;
+
+      @media (min-width: $tablet-width) {
+        border-top: none;
+      }
+    }
+
+    a[href] {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--dark-bg {
+    .main-nav__item {
+      @media (min-width: $desktop-width) {
+        color: $default-color;
+
+        &--active {
+          border-bottom: 2px solid $default-color;
+        }
+      }
     }
   }
 }

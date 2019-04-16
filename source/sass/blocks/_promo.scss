@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   padding-bottom: 10px;
   padding-top: 30px;
   font-family: $fontOswald;
@@ -8,10 +9,47 @@
   color: $default-color;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 305px;
+    background-color: $success-third;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 500px;
+    padding: 50px 90px 0;
+    background: none;
+
+    &::before {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 696px;
+    padding: 0 80px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right center / 50% 100%;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      align-items: flex-start;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+      min-height: 696px;
+      padding-left: 120px;
+    }
   }
 
   &__title {
@@ -19,6 +57,14 @@
     font-size: 36px;
     font-weight: inherit;
     line-height: inherit;
+
+    @media (min-width: $tablet-width) {
+      max-width: 440px;
+      margin: 0 0 40px;
+      font-size: 60px;
+      text-align: left;
+      color: $fontColorSecondary;
+    }
   }
 
   &__slogan {
@@ -27,9 +73,38 @@
     font-weight: inherit;
     text-transform: uppercase;
     line-height: inherit;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+      font-size: 20px;
+      color: $fontColorSecondary;
+    }
+  }
+
+  &__image {
+    width: 280px;
+    height: 271px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (min-width: $desktop-width) {
+      z-index: auto;
+    }
   }
 
   &__link {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 17px 27px;
+      font-size: 20px;
+    }
   }
 }

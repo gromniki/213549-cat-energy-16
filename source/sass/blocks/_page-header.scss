@@ -1,9 +1,44 @@
 .page-header {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      z-index: 3;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 55px 40px;
+    /*position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 55px 40px;*/
+  }
+
   &__logo {
     display: inline-block;
     padding: 12px 20px;
     vertical-align: middle;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }

@@ -2,9 +2,28 @@
   font-weight: 400;
   background-color: $default-secondary;
 
-  &__logo,
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 150px;
+    }
+  }
+
   &__social {
+    padding: 22px 0 20px;
+    border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &__logo {
@@ -12,10 +31,10 @@
     padding: 40px 0 25px;
     text-align: center;
     vertical-align: middle;
-  }
 
-  &__social {
-    padding: 22px 0 20px;
+    @media (min-width: $tablet-width) {
+      padding: 25px 0;
+    }
   }
 
   &__copyright {
