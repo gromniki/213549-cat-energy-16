@@ -12,7 +12,7 @@
     flex-direction: column;
     max-width: 324px;
     width: 100%;
-    margin: 40px 30px;
+    margin: 70px 4%;
     padding: 115px 40px 40px;
     background-color: $default-secondary;
     border: none;
@@ -44,13 +44,5 @@
   &__title {
     max-width: 80px;
     margin: 0 0 20px;
-  }
-
-  &__link {
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 30px;
-    }
   }
 }

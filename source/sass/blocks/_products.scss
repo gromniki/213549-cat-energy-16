@@ -50,6 +50,26 @@
 
   &__more {
     position: relative;
+    padding: 25px 20px;
+    font-weight: 400;
+    color: $fontColorSecondary;
+    border-bottom: 1px solid $border-base;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 324px;
+      width: 100%;
+      margin: 70px 4%;
+      padding: 40px;
+      border: 1px solid $border-base;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 245px;
+      margin: 40px;
+    }
 
     &::before,
     &::after {
@@ -63,6 +83,7 @@
       transform: translate(-50%, 0);
 
       @media (min-width: $tablet-width) {
+        top: 84px;
         width: 60px;
       }
     }
@@ -74,6 +95,7 @@
       height: 30px;
 
       @media (min-width: $tablet-width) {
+        top: 55px;
         height: 60px;
       }
     }
@@ -81,18 +103,24 @@
 
   &__heading,
   &__small {
+    display: block;
     width: 100%;
     text-align: center;
   }
 
   &__heading {
     margin-bottom: 10px;
-    padding-top: 60px;
+    padding-top: 55px;
     font-size: 16px;
     font-weight: inherit;
     line-height: 20px;
     font-family: $fontOswald;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 100px;
+      font-size: 20px;
+    }
   }
 
   &__small {
@@ -100,9 +128,20 @@
     font-size: 12px;
     line-height: 16px;
     color: $fontColor;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: normal;
+    }
   }
 
   &__btn {
     width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media (min-width: $tablet-width) {
+      margin-top: auto;
+    }
   }
 }

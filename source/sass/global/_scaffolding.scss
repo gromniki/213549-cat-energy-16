@@ -87,6 +87,10 @@ input[type="radio"].visually-hidden {
     color: $fontColor;
     background-color: $default-secondary;
 
+    @media (min-width: $tablet-width) {
+      padding: 11px 30px;
+    }
+
     &:hover,
     &:focus {
       background-color: $border-light;
