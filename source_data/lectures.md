@@ -120,3 +120,28 @@
 - https://css-tricks.com/full-width-containers-limited-width-parents – Full Width Containers in Limited Width Parents.
 
 ### Лекция 5. Адаптивные декоративные элементы
+### Демки
+- https://up.htmlacademy.ru/adaptive/16/demos/2091#1 – Барбершоп. Завершаем вёрстку шапки
+- https://up.htmlacademy.ru/adaptive/16/demos/2093#1 – Барбершоп. Завершаем вёрстку навигации
+- https://up.htmlacademy.ru/adaptive/16/demos/2095#1 – Барбершоп. Завершаем вёрстку блока «Статистика»
+- https://up.htmlacademy.ru/adaptive/16/demos/2097#1 – Барбершоп. Резиновая шапка
+- https://up.htmlacademy.ru/adaptive/16/demos/2099#1 – Барбершоп. Резиновая статистика
+
+### Флексбокс
+- https://habr.com/ru/post/329820 – 11 вещей которые я узнал, читая спецификацию flexbox.
+- https://madebymike.com.au/demos/flexbox-tester – Flexbox Tester.
+### Единицы vh и vw
+- https://medium.com/@ckor/make-full-screen-sections-with-1-line-of-css-b82227c75cbd – Make full screen sections with 1 line of CSS.
+- https://codepen.io/ckor/full/cf2134280cd25e8ac7e57f1b05bb0b49 – Демонстрация.
+### Скрытие элементов
+- https://allyjs.io/tutorials/hiding-elements.html – Hiding DOM elements.
+### Разное
+- https://htmlacademy.ru/shorts/16 – Адаптивная вёрстка.
+- https://habr.com/ru/company/zerotech/blog/336172 – Мобильные браузеры и их пушистые лапки.
+- https://isqua.ru/blog/2016/05/30/kak-popast-v-makiet-i-nie-soiti-s-uma – Как попасть в макет и не сойти с ума.
+- https://github.com/yoksel/pixel-glass-js – Pixel Glass (инструмент для проверки соответствия вёрстки макету).
+- https://isqua.ru/blog/2016/06/23/content-po-sentru-fon-po-shirinie – Контент по центру, фон по ширине.
+- https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css – Styling Cross-Browser Compatible Range Inputs with CSS.
+
+### Лекция 6. Адаптивная графика
+
