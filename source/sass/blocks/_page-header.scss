@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 30px;
+    padding: 25px 4%;
   }
 
   &--desktop {
@@ -34,7 +34,7 @@
 
   &__logo {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 12px 6%;
     vertical-align: middle;
 
     @media (min-width: $tablet-width) {

@@ -32,8 +32,14 @@
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    padding: 0 80px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right center / 50% 100%;
+    padding: 0 40px;
+
+    &::before {
+      left: 50%;
+      width: 50%;
+      height: 696px;
+      background: $success-fourth url("../img/index-background-desktop@1x.jpg") no-repeat right center / 720px 696px;
+    }
   }
 
   &__wrapper {
@@ -48,7 +54,7 @@
     @media (min-width: $desktop-width) {
       justify-content: center;
       min-height: 696px;
-      padding-left: 120px;
+      padding-left: 80px;
     }
   }
 
