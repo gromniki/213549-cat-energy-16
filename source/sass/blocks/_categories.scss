@@ -24,15 +24,18 @@
     background-color: $default-secondary;
 
     @media (min-width: $tablet-width) {
-      position: relative;
       margin-bottom: 30px;
       padding: 80px 40% 60px 50px;
     }
 
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      position: relative;
+    }
+
     @media (min-width: $desktop-width) {
-      max-width: 570px;
+      width: 570px;
       margin-right: 80px;
-      padding: 50px 50px 60px;
+      padding: 45px 50px 60px;
 
       &:nth-of-type(2n) {
         margin-right: 0;
@@ -58,9 +61,12 @@
     text-transform: uppercase;
     line-height: 37px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       position: static;
       padding: 0;
+    }
+
+    @media (min-width: $tablet-width) {
       font-size: 36px;
     }
 
@@ -78,10 +84,13 @@
       width: 50px;
       height: 50px;
 
-      @media (min-width: $tablet-width) {
-        top: 52%;
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
         right: 60px;
         left: auto;
+      }
+
+      @media (min-width: $tablet-width) {
+        top: 52%;
         width: 200px;
         height: 200px;
         transform: translate(0, -50%);
@@ -111,7 +120,7 @@
 
     &--tiger {
       &::before {
-        @media (min-width: $tablet-width) {
+        @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
           top: 55%;
         }
       }
@@ -121,7 +130,7 @@
         width: 65px;
         background: url("../img/icon-cat-pro.svg") no-repeat center;
 
-        @media (min-width: $tablet-width) {
+        @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
           top: 54%;
           right: 25px;
           left: auto;
@@ -141,9 +150,12 @@
     padding-bottom: 20px;
     color: $fontColor;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       max-width: 375px;
       padding-bottom: 30px;
+    }
+
+    @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 1.5;
     }
@@ -166,6 +178,10 @@
       padding-top: 27px;
       font-size: 20px;
       border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 10px;
     }
 
     &--arrow {
