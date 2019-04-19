@@ -27,19 +27,20 @@
   }
 
   &__logo {
-    display: inline-block;
     padding: 40px 0 25px;
     text-align: center;
     vertical-align: middle;
 
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-      outline: none;
-    }
+    &[href] {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+        outline: none;
+      }
 
-    &:active {
-      opacity: 0.6;
+      &:active {
+        opacity: 0.6;
+      }
     }
 
     @media (min-width: $tablet-width) {
