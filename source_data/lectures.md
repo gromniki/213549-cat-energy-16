@@ -119,7 +119,7 @@
 - https://www.quirksmode.org/blog/archives/2010/09/combining_meta.html – Ремы, емы, и почему отказ от них  не проблема.
 - https://css-tricks.com/full-width-containers-limited-width-parents – Full Width Containers in Limited Width Parents.
 
-### Лекция 5. Адаптивные декоративные элементы
+## Лекция 5. Адаптивные декоративные элементы
 ### Демки
 - https://up.htmlacademy.ru/adaptive/16/demos/2091#1 – Барбершоп. Завершаем вёрстку шапки
 - https://up.htmlacademy.ru/adaptive/16/demos/2093#1 – Барбершоп. Завершаем вёрстку навигации
@@ -143,5 +143,25 @@
 - https://isqua.ru/blog/2016/06/23/content-po-sentru-fon-po-shirinie – Контент по центру, фон по ширине.
 - https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css – Styling Cross-Browser Compatible Range Inputs with CSS.
 
-### Лекция 6. Адаптивная графика
+## Лекция 6. Адаптивная графика
+### Демки
+- https://up.htmlacademy.ru/adaptive/16/demos/2101#1 – Барбершоп. Адаптивная графика шапки
+- https://up.htmlacademy.ru/adaptive/16/demos/2103#1 – Барбершоп. Адаптивная графика блока «Работы»
 
+### Адаптивная графика
+- https://www.w3.org/TR/html51/semantics-embedded-content.html#semantics-embedded-content – Спецификация тега picture.
+- https://css-live.ru/articles/pochemu-my-ne-mozhem-delat-po-nastoyashhemu-adaptivnye-izobrazheniya-pri-pomoshhi-css-ili-javascript.html
+   – Почему мы не можем делать по-настоящему адаптивные изображения при помощи CSS или JavaScript.
+- https://www.lullabot.com/articles/fundamentals-of-responsive-images – Основы адаптивности изображений.
+- https://cloudinary.com/blog/automatically_art_directed_responsive_images – Automatically art-directed responsive images.
+- http://alistapart.com/article/responsive-images-in-practice – Responsive Images in Practice.
+- https://observablehq.com/@eeeps/w-descriptors-and-sizes-under-the-hood – w descriptors and sizes: Under the hood.
+- https://www.youtube.com/watch?v=tTn36NWCpMI&t=19531s – Сколько нужно верстальщиков, чтобы вставить <picture>?
+- https://pepelsbey.net/pres/picture – (презентация).
+- https://www.awwwards.com/awwwards-conference-2015-bruce-lawson-from-opera-on-responsive-images.html – Responsive Images
+- http://brucelawson.github.io/talks/2015/awwwards – (презентация).
+- http://scottjehl.github.io/picturefill – Полифил для <picture> — picturefill.
+- https://htmlacademy.ru/shorts/18 – Какие нужны фавиконки.
+
+## Лекция 7. Векторная графика и оптимизация
+### Демки
