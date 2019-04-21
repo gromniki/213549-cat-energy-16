@@ -2,7 +2,7 @@
   &__toggle {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 6%;
     z-index: 3;
     width: 25px;
     height: 20px;
@@ -25,7 +25,7 @@
       background-color: $fontColorSecondary;
       border-radius: 2px;
       transform: translate(-50%, -50%);
-      transition-duration: 0.2s;
+      transition-duration: 0.3s;
 
       &::before,
       &::after {
@@ -35,7 +35,7 @@
         height: 2px;
         background-color: $fontColorSecondary;
         border-radius: 2px;
-        transition-duration: 0.2s;
+        transition-duration: 0.3s;
       }
 
       &::before {
@@ -51,7 +51,7 @@
     &:focus {
       outline: none;
 
-      span {
+      &--lines {
         background-color: $primary-color;
 
         &::before,
@@ -60,9 +60,19 @@
         }
       }
     }
+  }
 
-    &.active {
-      span {
+  &--closed {
+    .main-nav__wrapper {
+      @media (max-width: $mobile-width-only) {
+        display: none;
+      }
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+      &--lines {
         background-color: transparent;
 
         &::before,
@@ -80,6 +90,12 @@
           transform: rotate(45deg);
         }
       }
+    }
+  }
+
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
     }
   }
 

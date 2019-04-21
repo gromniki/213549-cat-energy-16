@@ -10,9 +10,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    max-width: 324px;
-    width: 100%;
-    margin: 70px 4%;
+    /*max-width: 324px;
+    width: 100%;*/
+    flex-basis: 42%;
+    margin: 70px 3.9%;
     padding: 115px 40px 40px;
     background-color: $default-secondary;
     border: none;
@@ -33,6 +34,7 @@
 
   &__image-wrapper {
     flex-basis: 50%;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       position: absolute;

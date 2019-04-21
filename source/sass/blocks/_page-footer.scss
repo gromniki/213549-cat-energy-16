@@ -27,13 +27,27 @@
   }
 
   &__logo {
-    display: inline-block;
-    padding: 40px 0 25px;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    padding: 25px 0 15px;
+
+    &[href] {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       padding: 25px 0;
+    }
+
+    &-image {
+      margin: auto;
     }
   }
 
