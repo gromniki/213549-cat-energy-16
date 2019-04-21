@@ -21,8 +21,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 500px;
-    padding: 50px 90px 0;
+    min-height: 837px;
+    padding: 27px 95px 0;
     background: none;
 
     &::before {
@@ -88,9 +88,6 @@
   }
 
   &__image {
-    width: 280px;
-    height: 271px;
-
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: 0;
