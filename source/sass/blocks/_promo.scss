@@ -31,8 +31,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 696px;
-    padding: 0 40px;
+    /*min-height: 696px;*/
+    min-height: 474px;
+    padding: 222px 40px 0;
+    /*padding: 0 40px;*/
 
     &::before {
       left: 50%;
@@ -53,7 +55,8 @@
 
     @media (min-width: $desktop-width) {
       justify-content: center;
-      min-height: 696px;
+      /*min-height: 696px;*/
+      min-height: 474px;
       padding-left: 80px;
     }
   }
@@ -97,6 +100,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      left: 59%;
       z-index: auto;
     }
   }
