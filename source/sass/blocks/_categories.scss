@@ -208,14 +208,17 @@
       outline: none;
 
       .categories__link--arrow::before {
+        /*content: "";*/
         position: absolute;
-        width: 9px;
+        top: 50%;
+        right: -35px;
+        width: 5px;
         height: 2px;
         background: $fontColorSecondary;
       }
 
       .categories__link--arrow::after {
-        right: -59px;
+        right: -40px;
       }
     }
 

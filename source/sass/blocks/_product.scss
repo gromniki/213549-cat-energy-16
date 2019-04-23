@@ -39,6 +39,8 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       top: -70px;
+      right: 0;
+      left: 0;
       flex-basis: auto;
     }
   }

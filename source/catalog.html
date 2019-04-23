@@ -144,7 +144,11 @@
         </li>
         <li class="products__item  product">
           <a class="product__image-wrapper" href="product.html">
-            <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy SLIM 500 г">
+            </picture>
           </a>
           <div class="features">
             <h3 class="product__title  features__title">
@@ -165,7 +169,11 @@
         </li>
         <li class="products__item  product">
           <a class="product__image-wrapper" href="product.html">
-            <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 1000 г">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy SLIM 1000 г">
+            </picture>
           </a>
           <div class="features">
             <h3 class="product__title  features__title">
@@ -186,7 +194,11 @@
         </li>
         <li class="products__item  product">
           <a class="product__image-wrapper" href="product.html">
-            <img class="product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="product__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy SLIM 500 г">
+            </picture>
           </a>
           <div class="features">
             <h3 class="product__title  features__title">
@@ -317,6 +329,7 @@
   </div>
 </footer>
 
+<script src="js/picturefill.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
