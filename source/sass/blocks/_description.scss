@@ -4,12 +4,12 @@
   color: $fontColorSecondary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
-    padding: 0 0 60px;
+    padding: 25px 0 50px;
     border-bottom: 1px solid $border-base;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 30px 0 20px;
     border-bottom: none;
   }
 
@@ -23,6 +23,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 70px;
       font-size: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 75px;
     }
   }
 
@@ -51,9 +55,13 @@
       max-width: 245px;
       min-height: 230px;
       margin: 0 80px 90px 0;
-      padding: 120px 0 0;
+      padding: 110px 0 0;
       font-size: 16px;
       line-height: 1.5;
+
+      &:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
+      }
     }
 
     @media (min-width: $desktop-width) {

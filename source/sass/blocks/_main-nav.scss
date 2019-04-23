@@ -142,6 +142,11 @@
       }
     }
 
+    @media (min-width: $desktop-width) {
+      padding: 8px 0;
+      font-size: 20px;
+    }
+
     &:first-of-type {
       border-top: 1px solid $border-base;
 
