@@ -12,16 +12,23 @@
     flex-direction: column;
     /*max-width: 324px;
     width: 100%;*/
-    flex-basis: 42%;
+    /*flex-basis: 42%;*/
+    width: 42%;
     margin: 70px 3.9%;
-    padding: 115px 40px 40px;
+    padding: 165px 40px 40px;
     background-color: $default-secondary;
     border: none;
+
+    &:nth-of-type(even) {
+      .product__image-wrapper {
+        top: -77px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
-    margin: 40px;
+    margin: 70px 40px;
   }
 
   &:first-of-type {
@@ -38,7 +45,7 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: -70px;
+      top: -45px;
       right: 0;
       left: 0;
       flex-basis: auto;
