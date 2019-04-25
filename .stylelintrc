@@ -6,5 +6,8 @@
     "indentation": [2, {"ignore": ["inside-parens"]}]
   },
 
-  "ignoreFiles": "source/sass/global/normalize.scss"
+  "ignoreFiles": [
+    "source/sass/global/normalize.scss",
+    "source/js/picturefill.min.js"
+  ]
 }

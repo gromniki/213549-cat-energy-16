@@ -5,24 +5,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 4%;
+    padding: 23px 4%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 56px 40px;
   }
 
   &--desktop {
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 0;
-      left: 50%;
-      width: 100%;
+      left: 0;
+      right: 0;
       z-index: 3;
-      transform: translate(-50%, 0);
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 55px 40px;
   }
 
   &__logo {
@@ -44,6 +44,13 @@
 
     @media (min-width: $tablet-width) {
       padding: 0;
+    }
+
+    &-image {
+      @media (min-width: $desktop-width) {
+        width: 203px;
+        height: 60px;
+      }
     }
   }
 }

@@ -3,7 +3,8 @@
   background-color: $default-secondary;
 
   @media (min-width: $tablet-width) {
-    min-height: 150px;
+    padding: 23px 40px;
+    /*min-height: 150px;*/
   }
 
   &__wrapper {
@@ -12,7 +13,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      min-height: 150px;
+      /*min-height: 150px;*/
     }
   }
 

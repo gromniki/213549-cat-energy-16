@@ -3,6 +3,10 @@
   font-weight: 400;
   color: $fontColorSecondary;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 0 25px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 80px 0 40px;
   }
@@ -34,7 +38,7 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
-      margin-right: 80px;
+      margin: 0 80px 0 0;
       padding: 45px 50px 60px;
 
       &:nth-of-type(2n) {
@@ -44,10 +48,6 @@
 
     &:last-of-type {
       margin-bottom: 0;
-
-      @media (min-width: $tablet-width) {
-        margin-bottom: 30px;
-      }
     }
   }
 
@@ -190,12 +190,17 @@
       &::after {
         content: "";
         position: absolute;
-        top: 8px;
-        right: -35px;
+        top: 5px;
+        left: 12px;
         width: 25px;
         height: 12px;
-        background: url("../img/icon-right-arrow-long.svg") no-repeat center / 100%;
+        background: url("../img/icon-right-arrow-long.svg") no-repeat;
         transition-duration: 0.2s;
+
+        @media (min-width: $tablet-width) {
+          top: 10px;
+          right: -50px;
+        }
       }
     }
 
@@ -203,15 +208,9 @@
     &:focus {
       outline: none;
 
-      .categories__link--arrow::before {
-        position: absolute;
-        width: 9px;
-        height: 2px;
-        background: $fontColorSecondary;
-      }
-
       .categories__link--arrow::after {
-        right: -59px;
+        width: 34px;
+        background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
       }
     }
 
