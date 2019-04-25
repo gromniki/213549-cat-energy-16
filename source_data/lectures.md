@@ -165,3 +165,48 @@
 
 ## Лекция 7. Векторная графика и оптимизация
 ### Демки
+- https://up.htmlacademy.ru/adaptive/16/demos/2105#1 - Барбершоп. Адаптивный логотип в SVG
+- https://up.htmlacademy.ru/adaptive/16/demos/2107#1 - Барбершоп. Векторный спрайт
+- https://up.htmlacademy.ru/adaptive/16/demos/2109#1 - Барбершоп. Использование WebP с <picture>
+- https://up.htmlacademy.ru/adaptive/16/demos/2111#1 - Использование SVG. <symbol>
+- https://up.htmlacademy.ru/adaptive/16/demos/2113#1 - Использование SVG. Стилизация
+
+### Использование SVG
+- https://htmlacademy.ru/shorts/4 - Как правильно вставлять SVG.
+- http://css.yoksel.ru/tags/#svg - Блог Юлии Бухваловой про SVG.
+- https://svgontheweb.com/ru/ - SVG в вебе. Практическое руководство.
+- http://svgpocketguide.com/book/ - Pocket Guide to Writing SVG.
+- https://www.heartinternet.uk/blog/integrating-svg-site/ - Integrating SVG into your site.
+- https://github.com/emilbjorklund/svg-weirdness/issues - svg-weirdness bugtracker.
+- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies - From object to iframe — other embedding technologies.
+- https://htmlacademy.ru/blog/127-a-guide-to-svg-on-web - Как проектировать, создавать и анимировать SVG.
+### Векторные спрайты
+- http://css.yoksel.ru/svg-groups-use/ - SVG: группировка и переиспользование элементов.
+- http://css.yoksel.ru/svg-sizes/ - Размеры в SVG.
+- https://github.com/Keyamoon/svgxuse - svgxuse.
+- https://github.com/jonathantneal/svg4everybody - SVG for Everybody.
+- https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/ - Styling SVG <use> Content with CSS.
+- http://yoksel.github.io/url-encoder/ - URL-encoder for SVG.
+### Стилизация
+- https://vagari.github.io/svg_queries/ - SVG Using Internal Media-Queries.
+- https://codepen.io/noahblon/post/coloring-svgs-in-css-background-images - Coloring SVG in CSS Background Images.
+- http://snapsvg.io/ - Snap.svg The JavaScript SVG library for the modern web.
+### Оптимизация и доступность
+-  - Разбор оптимального использования графики на примере реального сайта.
+-  - Доступные SVG.
+-  - Creating Accessible SVGs.
+-  - A Complete Guide to SVG Fallbacks.
+-  - Tips for Creating and Exporting Better SVGs for the Web.
+-  - SVGO. Nodejs-based tool for optimizing SVG vector graphics files.
+-  - SVG-NOW. SVG Optimizer for Adobe Illustrator.
+-  - SVGO Compressor for Sketch.
+-  - SVGOMG – svgo gui.
+### Оптимизация растровой графики
+-  - Оптимизация изображений.
+-  - WebP.
+-  - Squoosh – image compression web app.
+-  - Using WebP Images.
+-  - Gifsicle.
+-  - Jpegtran.
+-  - OptiPNG.
+-  - Pngquant.
