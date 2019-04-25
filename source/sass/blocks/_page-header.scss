@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid $border-base;
 
   @media (min-width: $tablet-width) {
     display: flex;
