@@ -126,6 +126,10 @@
     font: inherit;
     border-bottom: 1px solid $border-base;
 
+    &:last-of-type {
+      border-bottom: none;
+    }
+
     @media (min-width: $tablet-width) {
       margin-right: 35px;
       padding: 6px 0;
