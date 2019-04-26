@@ -21,14 +21,14 @@
     }
   }
 
+  .social__icon {
+    fill: $success-color;
+  }
+
   &__link {
     &:hover,
     &:focus {
       outline: none;
-
-      svg {
-        fill: $success-color;
-      }
     }
 
     &:active {
