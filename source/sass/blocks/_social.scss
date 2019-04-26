@@ -26,7 +26,7 @@
     &:focus {
       outline: none;
 
-      .social__path {
+      svg {
         fill: $success-color;
       }
     }
