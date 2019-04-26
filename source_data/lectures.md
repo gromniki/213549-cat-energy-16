@@ -192,21 +192,36 @@
 - https://codepen.io/noahblon/post/coloring-svgs-in-css-background-images - Coloring SVG in CSS Background Images.
 - http://snapsvg.io/ - Snap.svg The JavaScript SVG library for the modern web.
 ### Оптимизация и доступность
--  - Разбор оптимального использования графики на примере реального сайта.
--  - Доступные SVG.
--  - Creating Accessible SVGs.
--  - A Complete Guide to SVG Fallbacks.
--  - Tips for Creating and Exporting Better SVGs for the Web.
--  - SVGO. Nodejs-based tool for optimizing SVG vector graphics files.
--  - SVG-NOW. SVG Optimizer for Adobe Illustrator.
--  - SVGO Compressor for Sketch.
--  - SVGOMG – svgo gui.
+- https://www.youtube.com/watch?v=mAoxm-AyNCw - Разбор оптимального использования графики на примере реального сайта.
+- http://prgssr.ru/development/dostupnye-svg.html - Доступные SVG.
+- https://www.deque.com/blog/creating-accessible-svgs/ - Creating Accessible SVGs.
+- https://css-tricks.com/a-complete-guide-to-svg-fallbacks/ - A Complete Guide to SVG Fallbacks.
+- https://www.sarasoueidan.com/blog/svg-tips-for-designers/ - Tips for Creating and Exporting Better SVGs for the Web.
+- https://github.com/svg/svgo - SVGO. Nodejs-based tool for optimizing SVG vector graphics files.
+- https://github.com/davidderaedt/SVG-NOW - SVG-NOW. SVG Optimizer for Adobe Illustrator.
+- https://www.sketch.com/extensions/plugins/svgo-compressor/ - SVGO Compressor for Sketch.
+- https://jakearchibald.github.io/svgomg/ - SVGOMG – svgo gui.
 ### Оптимизация растровой графики
--  - Оптимизация изображений.
--  - WebP.
--  - Squoosh – image compression web app.
--  - Using WebP Images.
--  - Gifsicle.
--  - Jpegtran.
--  - OptiPNG.
--  - Pngquant.
+- https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization - Оптимизация изображений.
+- https://developers.google.com/speed/webp/ - WebP.
+- https://squoosh.app/ - Squoosh – image compression web app.
+- https://css-tricks.com/using-webp-images/ - Using WebP Images.
+- http://www.lcdf.org/gifsicle/ - Gifsicle.
+- http://jpegclub.org/jpegtran/ - Jpegtran.
+- http://optipng.sourceforge.net - OptiPNG.
+- https://pngquant.org - Pngquant.
+
+## Лекция 8. Погружение в автоматизацию
+### Работа с Node.js
+-  - Подробнее о файле package.json.
+-  - Подробнее о команде npm i.
+-  - Полезные команды для работы с Node.js.
+### Плагины для работы с Gulp
+-  - Переименование файлов gulp-rename.
+-  - Удаление файлов del.
+-  - Минификация CSS gulp-csso.
+-  - Шаблонизация HTML-файлов gulp-posthtml и posthtml-include.
+-  - Сборка SVG-спрайтов gulp-svgstore.
+-  - Оптимизация изображений gulp-imagemin.
+-  - Конвертация изображений в формат WebP gulp-webp.
+
