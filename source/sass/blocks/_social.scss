@@ -21,14 +21,16 @@
     }
   }
 
-  .social__icon {
-    fill: $success-color;
-  }
-
   &__link {
+    fill: $neutral-regular;
+
     &:hover,
     &:focus {
       outline: none;
+
+      svg {
+        fill: $success-color;
+      }
     }
 
     &:active {
@@ -70,9 +72,5 @@
         }
       }
     }
-  }
-
-  &__path {
-    fill: $neutral-regular;
   }
 }

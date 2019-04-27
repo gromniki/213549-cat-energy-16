@@ -9,6 +9,7 @@
 
   &__link {
     color: inherit;
+    fill: $neutral-regular;
 
     @media (min-width: $tablet-width) {
       margin-right: 15px;
@@ -23,7 +24,7 @@
     &:focus {
       outline: none;
 
-      .copyright__path {
+      svg {
         fill: $success-color;
       }
     }
@@ -31,9 +32,5 @@
     &:active {
       opacity: 0.3;
     }
-  }
-
-  &__path {
-    fill: $neutral-regular;
   }
 }
