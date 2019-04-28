@@ -22,11 +22,13 @@
   }
 
   &__link {
+    fill: $neutral-regular;
+
     &:hover,
     &:focus {
       outline: none;
 
-      .social__path {
+      svg {
         fill: $success-color;
       }
     }
@@ -70,9 +72,5 @@
         }
       }
     }
-  }
-
-  &__path {
-    fill: $neutral-regular;
   }
 }

@@ -1,7 +1,22 @@
 .supplement-goods {
+  position: relative;
   padding: 15px 0 40px;
   font-weight: 400;
   color: $fontColorSecondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $success-color;
+
+    @media (min-width: $tablet-width) {
+      top: 36px;
+    }
+  }
 
   &__list {
     @include reset-list();
