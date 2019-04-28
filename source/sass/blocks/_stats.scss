@@ -1,31 +1,58 @@
 .stats {
-  &__value,
-  &__field {
-    display: inline-block;
-    vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px 0 16px;
 
-    &--result {
-      font-family: $fontOswald;
-      text-transform: uppercase;
-      line-height: 20px;
+  &__item {
+    position: relative;
+
+    &:not(:last-of-type) {
+      width: 45%;
+      border: 1px solid $border-secondary;
+      border-radius: 3px;
+    }
+
+    &:last-of-type {
+      width: 100%;
+      margin-top: 35px;
+      text-align: center;
     }
   }
 
-  &__value:not(:last-of-type) {
-    position: relative;
-    width: 45%;
-    padding: 15px;
+  &__value {
+    padding: 12px 15px 17px;
     font-size: 24px;
     font-family: $fontOswald;
-    line-height: 1;
-    text-align: center;
     text-transform: uppercase;
-    border: 1px solid $border-secondary;
-    border-radius: 3px;
   }
 
-  &__field:not(:last-of-type) {
-    padding: 0 15px;
-    background-color: $default-color;
+  &__field {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    max-width: 110px;
+    margin: 0;
+    padding: 3px 15px;
+    font-size: 12px;
+    color: $fontColor;
+    background-color: $default-secondary;
+    transform: translate(-50%, 0);
+  }
+
+  &__value,
+  &__field {
+    line-height: 1;
+    text-align: center;
+
+    &--result {
+      position: static;
+      display: inline;
+      padding: 0;
+      font-size: 14px;
+      font-family: $fontOswald;
+      color: $fontColorSecondary;
+      line-height: 1.43;
+    }
   }
 }

@@ -10,7 +10,7 @@
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat center 0 / 320px;
   }
 
   &::before {
