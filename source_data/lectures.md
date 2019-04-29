@@ -213,15 +213,32 @@
 
 ## Лекция 8. Погружение в автоматизацию
 ### Работа с Node.js
--  - Подробнее о файле package.json.
--  - Подробнее о команде npm i.
--  - Полезные команды для работы с Node.js.
+- https://docs.npmjs.com/files/package.json - Подробнее о файле package.json.
+- https://docs.npmjs.com/cli/install - Подробнее о команде npm i.
+- https://htmlacademy.ru/blog/88-useful-commands-for-working-with-nodejs - Полезные команды для работы с Node.js.
 ### Плагины для работы с Gulp
--  - Переименование файлов gulp-rename.
--  - Удаление файлов del.
--  - Минификация CSS gulp-csso.
--  - Шаблонизация HTML-файлов gulp-posthtml и posthtml-include.
--  - Сборка SVG-спрайтов gulp-svgstore.
--  - Оптимизация изображений gulp-imagemin.
--  - Конвертация изображений в формат WebP gulp-webp.
+- https://www.npmjs.com/package/gulp-rename - Переименование файлов gulp-rename.
+- https://www.npmjs.com/package/del - Удаление файлов del.
+- https://www.npmjs.com/package/gulp-csso - Минификация CSS gulp-csso.
+- https://www.npmjs.com/package/gulp-posthtml
+- https://www.npmjs.com/package/posthtml-include - Шаблонизация HTML-файлов gulp-posthtml и posthtml-include.
+- https://www.npmjs.com/package/gulp-svgstore - Сборка SVG-спрайтов gulp-svgstore.
+- https://www.npmjs.com/package/gulp-imagemin - Оптимизация изображений gulp-imagemin.
+- https://www.npmjs.com/package/gulp-webp - Конвертация изображений в формат WebP gulp-webp.
 
+## Лекция 9. Производительность вёрстки
+### Загрузка сайта
+-  -  Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading.
+-  -  Для чего стоит использовать предварительную загрузку?
+### Веб-шрифты
+-  -  Исчерпывающее руководство по стратегиям загрузки веб-шрифтов.
+-  -  Паттерны загрузки веб-шрифтов.
+-  -  Оптимизация шрифтов.
+-  -  How new font technologies will improve the Web.
+### CSS
+-  -  CSS performance revisited: selectors, bloat and expensive styles.
+-  -  CSS triggers.
+### Рендеринг
+-  -  История одной оптимизации.
+-  -  Используйте свойства, вызывающие только компоновку, и контролируйте количество слоёв.
+-  -  CSS font-display:The Future of Font Rendering on the Web.
