@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");  // sprite svg
 var posthtml = require("gulp-posthtml");  // подключение html
 var include = require("posthtml-include");  // вставка в DOM дерево
 var del = require("del");  // удаление файлов
+var uglify = require("gulp-uglify");  // минификация js
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -46,6 +47,17 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("js", function () {
+  return gulp.src("source/**/*.js")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
