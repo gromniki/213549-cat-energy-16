@@ -55,4 +55,10 @@
       line-height: 1.43;
     }
   }
+
+  &__field {
+    &--result {
+      background-color: transparent;
+    }
+  }
 }
