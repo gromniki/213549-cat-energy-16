@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");  // подключение html
 var include = require("posthtml-include");  // вставка в DOM дерево
 var del = require("del");  // удаление файлов
 var uglify = require("gulp-uglify");  // минификация js
+var htmlmin = require("gulp-htmlmin");  // минификация html
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -46,6 +47,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
