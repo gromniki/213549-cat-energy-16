@@ -18,7 +18,7 @@
   }
 
   &__social {
-    padding: 22px 0 20px;
+    padding: 22px 0 17px;
     border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
 
@@ -29,7 +29,7 @@
 
   &__logo {
     display: flex;
-    padding: 25px 0 15px;
+    padding: 25px 0 17px;
 
     &[href] {
       &:hover,
@@ -53,6 +53,6 @@
   }
 
   &__copyright {
-    padding: 10px 0;
+    padding: 8px 0;
   }
 }

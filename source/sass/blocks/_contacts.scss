@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 60px;
@@ -21,7 +21,7 @@
 
   &__title,
   &__text {
-    max-width: 135px;
+    max-width: 140px;
 
     @media (min-width: $tablet-width) {
       max-width: 155px;
@@ -54,9 +54,24 @@
   }
 
   &__map {
+    max-height: 360px;
+
+    @media (min-width: $tablet-width) {
+      max-height: 400px;
+    }
+
     img {
       display: block;
       margin: 0 auto;
+    }
+
+    iframe {
+      height: 360px;
+      border: none;
+
+      @media (min-width: $tablet-width) {
+        height: 400px;
+      }
     }
   }
 }
