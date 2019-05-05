@@ -15,7 +15,7 @@
     padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 60px;
+      padding: 0 9% 60px;
     }
   }
 
@@ -50,6 +50,12 @@
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
+      text-align: right;
+
+      br {
+        display: block;
+        margin-bottom: 20px;
+      }
     }
   }
 
