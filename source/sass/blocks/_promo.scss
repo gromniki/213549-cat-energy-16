@@ -10,7 +10,7 @@
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat center 0 / 320px;
   }
 
   &::before {
@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 837px;
-    padding: 27px 95px 0;
+    padding: 35px 95px 0;
     background: none;
 
     &::before {
@@ -67,6 +67,7 @@
   }
 
   &__title {
+    width: 100%;
     margin: 0 0 25px;
     font-size: 36px;
     font-weight: inherit;
@@ -93,12 +94,16 @@
       font-size: 20px;
       color: $fontColorSecondary;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 53px;
+    }
   }
 
   &__image {
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: 0;
+      bottom: -5px;
       left: 50%;
       z-index: -1;
       transform: translate(-50%, 0);

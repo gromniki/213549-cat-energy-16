@@ -1,14 +1,38 @@
 .showcase {
-  padding: 20px 0 35px;
+  padding: 15px 0 35px;
   font-weight: 400;
   color: $fontColorSecondary;
   background-color: $default-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 35px;
+    position: relative;
+    padding: 45px 0 65px;
     font-size: 16px;
     line-height: 1.5;
     background-color: $default-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 460px;
+      background-color: $border-third;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0;
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      z-index: 3;
+    }
   }
 
   &__title {
@@ -22,11 +46,28 @@
       margin-bottom: 65px;
       font-size: 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 150px;
+    }
   }
 
   &__text {
     @media (min-width: $tablet-width) {
       max-width: 670px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 435px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__slider {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -53px;
+      right: 40px;
     }
   }
 }

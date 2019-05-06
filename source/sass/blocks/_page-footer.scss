@@ -3,8 +3,7 @@
   background-color: $default-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 40px;
-    /*min-height: 150px;*/
+    padding: 20px 0;
   }
 
   &__wrapper {
@@ -13,23 +12,23 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      /*min-height: 150px;*/
     }
   }
 
   &__social {
-    padding: 22px 0 20px;
+    padding: 22px 0 17px;
     border-top: 1px solid $border-base;
     border-bottom: 1px solid $border-base;
 
     @media (min-width: $tablet-width) {
+      padding: 14px 0 17px 30px;
       border: none;
     }
   }
 
   &__logo {
     display: flex;
-    padding: 25px 0 15px;
+    padding: 25px 0 17px;
 
     &[href] {
       &:hover,
@@ -48,11 +47,11 @@
     }
 
     &-image {
-      margin: auto;
+      margin: 0 auto;
     }
   }
 
   &__copyright {
-    padding: 10px 0;
+    padding: 8px 0;
   }
 }

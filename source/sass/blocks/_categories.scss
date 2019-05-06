@@ -4,7 +4,7 @@
   color: $fontColorSecondary;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 25px;
+    padding: 5px 0 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +48,10 @@
 
     &:last-of-type {
       margin-bottom: 0;
+
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        padding-right: 44.5%;
+      }
     }
   }
 
@@ -67,6 +71,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
       font-size: 36px;
     }
 
@@ -121,7 +126,7 @@
     &--tiger {
       &::before {
         @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-          top: 55%;
+          top: 52%;
         }
       }
 
@@ -131,7 +136,7 @@
         background: url("../img/icon-cat-pro.svg") no-repeat center;
 
         @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-          top: 54%;
+          top: 52%;
           right: 25px;
           left: auto;
           width: 268px;
@@ -151,7 +156,6 @@
     color: $fontColor;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      max-width: 375px;
       padding-bottom: 30px;
     }
 
@@ -199,7 +203,7 @@
 
         @media (min-width: $tablet-width) {
           top: 10px;
-          right: -50px;
+          left: 25px;
         }
       }
     }

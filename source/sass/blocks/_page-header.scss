@@ -45,14 +45,12 @@
     }
 
     @media (min-width: $tablet-width) {
+      max-width: 172px;
       padding: 0;
     }
 
-    &-image {
-      @media (min-width: $desktop-width) {
-        width: 203px;
-        height: 60px;
-      }
+    @media (min-width: $desktop-width) {
+      max-width: 203px;
     }
   }
 }

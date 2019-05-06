@@ -4,4 +4,93 @@
     padding: 0;
     list-style: none;
   }
+
+  &__item {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    @media (min-width: $desktop-width) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__scale {
+    position: relative;
+    width: 30%;
+    height: 14px;
+    margin: 0 20px;
+    background-color: $default-color;
+    border: 1px solid $border-base;
+    border-radius: 7px;
+
+    @media (min-width: $tablet-width) {
+      width: 61%;
+      height: 6px;
+      background-color: $border-fourth;
+      border: none;
+      border-radius: 2.5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 25px;
+    }
+  }
+
+  &__bar {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 50%;
+    height: 6px;
+    background-color: $success-color;
+    border-radius: 3px;
+    transform: translate(0, -50%);
+
+    @media (min-width: $tablet-width) {
+      left: 47%;
+      width: 34px;
+      height: 34px;
+      background-color: $default-color;
+      border: 1px solid $border-secondary;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: $success-color;
+        border-radius: inherit;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__button {
+    padding: 6px 0;
+    font-family: $fontOswald;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      border-bottom: 1px dotted $neutral-secondary;
+    }
+  }
 }

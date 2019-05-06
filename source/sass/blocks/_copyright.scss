@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   color: $fontColor;
@@ -13,10 +14,9 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 15px;
-      font-size: 16px;
 
       &:last-of-type {
-        margin-right: 0;
+        margin-right: -5px;
       }
     }
 

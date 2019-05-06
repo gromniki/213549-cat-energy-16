@@ -8,20 +8,34 @@
     padding-top: 70px;
   }
 
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 0;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 60px;
+      padding: 0 9% 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 50%;
+      max-width: 570px;
+      padding: 60px 70px;
+      background: $default-color;
+      transform: translate(0, -50%);
     }
   }
 
   &__title,
   &__text {
-    max-width: 135px;
+    max-width: 140px;
 
     @media (min-width: $tablet-width) {
       max-width: 155px;
@@ -50,13 +64,37 @@
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
+      text-align: right;
+
+      br {
+        line-height: 2em;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
     }
   }
 
   &__map {
+    max-height: 360px;
+
+    @media (min-width: $tablet-width) {
+      max-height: 400px;
+    }
+
     img {
       display: block;
       margin: 0 auto;
+    }
+
+    iframe {
+      height: 360px;
+      border: none;
+
+      @media (min-width: $tablet-width) {
+        height: 400px;
+      }
     }
   }
 }

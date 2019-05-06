@@ -1,31 +1,137 @@
 .stats {
-  &__value,
-  &__field {
-    display: inline-block;
-    vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px 0 16px;
 
-    &--result {
-      font-family: $fontOswald;
-      text-transform: uppercase;
-      line-height: 20px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    align-items: center;
+    margin: 40px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 40%;
+  }
+
+  &__item {
+    position: relative;
+
+    &:first-of-type {
+      @media (min-width: $desktop-width) {
+        margin-right: 40px;
+      }
+    }
+
+    &:not(:last-of-type) {
+      width: 45%;
+      border: 1px solid $border-secondary;
+      border-radius: 3px;
+
+      @media (min-width: $tablet-width) {
+        width: 23%;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 33%;
+      }
+    }
+
+    &:last-of-type {
+      width: 100%;
+      margin-top: 35px;
+      text-align: center;
+
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        width: 43%;
+        margin-top: 0;
+        text-align: right;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+        margin-top: 60px;
+      }
     }
   }
 
-  &__value:not(:last-of-type) {
-    position: relative;
-    width: 45%;
-    padding: 15px;
+  &__value {
+    padding: 12px 15px 17px;
     font-size: 24px;
     font-family: $fontOswald;
-    line-height: 1;
-    text-align: center;
     text-transform: uppercase;
-    border: 1px solid $border-secondary;
-    border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px 15px;
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &--result {
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        display: block;
+        margin-bottom: 10px;
+        text-align: right;
+      }
+    }
   }
 
-  &__field:not(:last-of-type) {
-    padding: 0 15px;
-    background-color: $default-color;
+  &__field {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    max-width: 110px;
+    margin: 0;
+    padding: 3px 15px;
+    font-size: 12px;
+    color: $fontColor;
+    background-color: $default-secondary;
+    transform: translate(-50%, 0);
+
+    @media (min-width: $tablet-width) {
+      bottom: -9px;
+      max-width: 145px;
+      padding: 3px 5px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      background-color: $default-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $border-third;
+    }
+
+    &--result {
+      background-color: transparent;
+
+      @media (min-width: $desktop-width) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__value,
+  &__field {
+    line-height: 1;
+    text-align: center;
+
+    &--result {
+      position: static;
+      display: inline;
+      padding: 0;
+      font-size: 14px;
+      font-family: $fontOswald;
+      color: $fontColorSecondary;
+      text-transform: uppercase;
+      line-height: 1.43;
+
+      @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 1;
+      }
+    }
   }
 }
