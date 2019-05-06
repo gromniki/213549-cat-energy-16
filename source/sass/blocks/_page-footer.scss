@@ -21,6 +21,7 @@
     border-bottom: 1px solid $border-base;
 
     @media (min-width: $tablet-width) {
+      padding: 14px 0 17px 30px;
       border: none;
     }
   }
