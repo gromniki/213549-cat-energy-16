@@ -4,13 +4,24 @@
   flex-wrap: wrap;
   padding: 12px 0 16px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     align-items: center;
     margin: 40px 0 45px;
   }
 
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 40%;
+  }
+
   &__item {
     position: relative;
+
+    &:first-of-type {
+      @media (min-width: $desktop-width) {
+        margin-right: 40px;
+      }
+    }
 
     &:not(:last-of-type) {
       width: 45%;
@@ -20,6 +31,10 @@
       @media (min-width: $tablet-width) {
         width: 23%;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 33%;
+      }
     }
 
     &:last-of-type {
@@ -27,10 +42,15 @@
       margin-top: 35px;
       text-align: center;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
         width: 43%;
         margin-top: 0;
         text-align: right;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+        margin-top: 60px;
       }
     }
   }
@@ -45,6 +65,14 @@
       padding: 20px 15px;
       font-size: 30px;
       line-height: 1.23;
+    }
+
+    &--result {
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        display: block;
+        margin-bottom: 10px;
+        text-align: right;
+      }
     }
   }
 
@@ -71,6 +99,18 @@
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       background-color: $default-color;
     }
+
+    @media (min-width: $desktop-width) {
+      background-color: $border-third;
+    }
+
+    &--result {
+      background-color: transparent;
+
+      @media (min-width: $desktop-width) {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__value,
@@ -92,22 +132,6 @@
         font-size: 20px;
         line-height: 1;
       }
-    }
-  }
-
-  &__value {
-    &--result {
-      @media (min-width: $tablet-width) {
-        display: block;
-        margin-bottom: 10px;
-        text-align: right;
-      }
-    }
-  }
-
-  &__field {
-    &--result {
-      background-color: transparent;
     }
   }
 }

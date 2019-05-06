@@ -24,6 +24,10 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 45px 0;
+  }
+
   &__wrapper {
     @media (min-width: $tablet-width) {
       position: relative;
@@ -42,11 +46,28 @@
       margin-bottom: 65px;
       font-size: 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 150px;
+    }
   }
 
   &__text {
     @media (min-width: $tablet-width) {
       max-width: 670px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 435px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__slider {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -53px;
+      right: 40px;
     }
   }
 }
