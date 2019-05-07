@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 25px 20px;
+  padding: 0 20px 25px;
   font-weight: 400;
   color: $fontColorSecondary;
   border-bottom: 1px solid $border-base;
@@ -14,7 +14,7 @@
     width: 100%;*/
     /*flex-basis: 42%;*/
     width: 42%;
-    margin: 70px 3.9%;
+    margin: 70px 4%;
     padding: 165px 40px 40px;
     background-color: $default-secondary;
     border: none;
@@ -23,6 +23,10 @@
       .product__image-wrapper {
         top: -77px;
       }
+    }
+
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
     }
   }
 
@@ -41,6 +45,7 @@
 
   &__image-wrapper {
     flex-basis: 50%;
+    height: 144px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -54,6 +59,6 @@
 
   &__title {
     max-width: 80px;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
   }
 }

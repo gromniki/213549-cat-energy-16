@@ -2,6 +2,7 @@
   flex-basis: 50%;
   font-weight: 400;
   color: $fontColorSecondary;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     flex-basis: auto;
@@ -13,17 +14,17 @@
     font-size: 16px;
     font-weight: inherit;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: inherit;
 
     @media (min-width: $tablet-width) {
       max-width: 130px;
-      margin: 0 auto 30px;
+      margin: 0 auto 18px;
       font-size: 20px;
       text-align: center;
     }
 
     &--margin {
-      margin: 0 0 10px;
+      margin: 0 0 11px;
     }
 
     & > * {
@@ -42,11 +43,11 @@
   &__field {
     flex-basis: 50%;
     margin: 0;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: inherit;
 
     @media (min-width: $tablet-width) {
-      padding: 10px 0;
+      padding: 8px 0;
       font-size: 16px;
       border-bottom: 1px solid $border-base;
     }
