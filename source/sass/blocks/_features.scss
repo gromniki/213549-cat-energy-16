@@ -68,11 +68,20 @@
       margin-bottom: 0;
     }
 
+    @media (min-width: $desktop-width) {
+      align-items: baseline;
+      width: 100%;
+    }
+
     .features__title {
       @media (min-width: $tablet-width) {
         max-width: none;
         width: 50%;
         text-align: left;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 38%;
       }
     }
 
@@ -81,6 +90,12 @@
         justify-content: flex-end;
         width: 45%;
         text-align: right;
+      }
+
+      @media (min-width: $desktop-width) {
+        justify-content: flex-start;
+        width: 50%;
+        text-align: left;
       }
     }
 
@@ -92,6 +107,10 @@
         line-height: 1.25;
         border-bottom: none;
       }
+
+      @media (min-width: $desktop-width) {
+        text-align: left;
+      }
     }
 
     .features__value {
@@ -99,11 +118,20 @@
         width: 60%;
         margin-right: 10px;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 65%;
+        margin-right: 35px;
+      }
     }
 
     .features__field {
       @media (min-width: $tablet-width) {
         width: 30%;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 20%;
       }
     }
   }

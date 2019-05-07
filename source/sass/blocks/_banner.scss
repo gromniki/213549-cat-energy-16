@@ -22,7 +22,7 @@
     background: url("../img/gift-photo-mobile@2x.jpg") no-repeat center / 100%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     width: auto;
     height: 200px;
     margin: 30px 4% 75px;
@@ -38,6 +38,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    width: 245px;
+    margin-bottom: 0;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center / 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -58,7 +63,7 @@
     color: inherit;
     transform: translate(-50%, 0);
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       top: 50%;
       bottom: auto;
       left: 60%;

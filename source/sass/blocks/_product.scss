@@ -24,7 +24,9 @@
         top: -77px;
       }
     }
+  }
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     &:nth-last-of-type(-n+2) {
       margin-bottom: 0;
     }

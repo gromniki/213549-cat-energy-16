@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 30px;
+    padding: 10px 0 0;
   }
 
   &__title {
@@ -67,6 +67,7 @@
     @media (min-width: $desktop-width) {
       max-width: 245px;
       margin: 70px 40px;
+      padding: 40px 35px;
     }
 
     &::before,
@@ -124,6 +125,10 @@
       margin-bottom: 25px;
       padding-top: 122px;
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 125px;
     }
   }
 
