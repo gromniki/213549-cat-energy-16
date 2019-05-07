@@ -4,6 +4,10 @@
   font-weight: 400;
   color: $fontColorSecondary;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 40px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,7 +18,7 @@
     background-color: $success-color;
 
     @media (min-width: $tablet-width) {
-      top: 36px;
+      top: 60px;
     }
   }
 
@@ -25,6 +29,12 @@
   &__item {
     padding: 15px 0;
     border-bottom: 1px solid $border-base;
+
+    @media (min-width: $tablet-width) {
+      padding: 25px 35px;
+      border-right: 1px solid $border-base;
+      border-left: 1px solid $border-base;
+    }
 
     &:first-of-type {
       border-top: 1px solid $border-base;
@@ -62,5 +72,9 @@
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.25;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+    }
   }
 }
