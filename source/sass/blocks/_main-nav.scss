@@ -127,7 +127,9 @@
     border-bottom: 1px solid $border-base;
 
     &:last-of-type {
-      border-bottom: none;
+      @media (max-width: $mobile-width-only) {
+        border-bottom: 0;
+      }
     }
 
     @media (min-width: $tablet-width) {

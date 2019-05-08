@@ -53,15 +53,15 @@
       <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="program__fields">
           <legend class="visually-hidden">Данные пользователя:</legend>
-          <p class="program__item  program__item--input">
+          <p class="program__item">
             <label for="program-name">Имя:<sup>*</sup></label>
             <input id="program-name" type="text" name="name" placeholder="Барсик">
           </p>
-          <p class="program__item  program__item--input">
+          <p class="program__item">
             <label for="program-weight">Вес&nbsp;(кг):<sup>*</sup></label>
             <input id="program-weight" type="text" name="weight" placeholder="7">
           </p>
-          <p class="program__item  program__item--input">
+          <p class="program__item">
             <label for="program-age">Возраст&nbsp;(лет):</label>
             <input id="program-age" type="text" name="age" placeholder="7">
           </p>
@@ -89,13 +89,16 @@
           <legend class="headline">
             <span class="headline__bg">Контактные данные (владельца кота)</span>
           </legend>
-          <p class="program__item  program__item--input">
+          <p class="program__item">
             <label for="program-email">E-mail:<sup>*</sup></label>
-            <input id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            <input class="program__item--input  program__item--input-email" id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            <svg class="" width="18" height="14">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </p>
-          <p class="program__item  program__item--input">
+          <p class="program__item">
             <label for="program-phone">Телефон:<sup>*</sup></label>
-            <input id="program-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            <input class="program__item--input  program__item--input-phone" id="program-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
           </p>
         </fieldset>
 
