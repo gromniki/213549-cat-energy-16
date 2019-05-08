@@ -52,44 +52,46 @@
 
       <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="program__fields">
-          <legend>Данные пользователя:</legend>
+          <legend class="visually-hidden">Данные пользователя:</legend>
           <p class="program__item  program__item--input">
             <label for="program-name">Имя:<sup>*</sup></label>
             <input id="program-name" type="text" name="name" placeholder="Барсик">
           </p>
           <p class="program__item  program__item--input">
-            <label for="program-weight">Вес (кг):<sup>*</sup></label>
+            <label for="program-weight">Вес&nbsp;(кг):<sup>*</sup></label>
             <input id="program-weight" type="text" name="weight" placeholder="7">
           </p>
           <p class="program__item  program__item--input">
-            <label for="program-age">Возраст (лет):<sup>*</sup></label>
+            <label for="program-age">Возраст&nbsp;(лет):</label>
             <input id="program-age" type="text" name="age" placeholder="7">
           </p>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend>Вид программы:</legend>
+        <fieldset class="program__fields  program__fields--border">
+          <legend class="visually-hidden">Вид программы:</legend>
           <ul class="program__list">
             <li class="program__option">
-              <input class="program__input  program__input-radio" type="radio" name="program-type" id="slim" value="Похудение" checked>
+              <input class="visually-hidden  program__input  program__input-radio" type="radio" name="program-type" id="slim" value="Похудение" checked disabled>
               <label for="slim">Похудение</label>
             </li>
             <li class="program__option">
-              <input class="program__input  program__input-radio" type="radio" name="program-type" id="pro" value="Набор массы">
+              <input class="visually-hidden  program__input  program__input-radio" type="radio" name="program-type" id="pro" value="Набор массы">
               <label for="pro">Набор массы</label>
             </li>
             <li class="program__option">
-              <input class="program__input  program__input-radio" type="radio" name="program-type" id="advice" value="Не знаю (нужен ваш совет)">
+              <input class="visually-hidden  program__input  program__input-radio" type="radio" name="program-type" id="advice" value="Не знаю (нужен ваш совет)">
               <label for="advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend>Контактные данные (владельца кота)</legend>
+        <fieldset class="program__fields  program__fields--line">
+          <legend class="headline">
+            <span class="headline__bg">Контактные данные (владельца кота)</span>
+          </legend>
           <p class="program__item  program__item--input">
             <label for="program-email">E-mail:<sup>*</sup></label>
-            <input id="program-email" type="text" name="email" placeholder="kuklachev@gmail.com">
+            <input id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com">
           </p>
           <p class="program__item  program__item--input">
             <label for="program-phone">Телефон:<sup>*</sup></label>
@@ -97,15 +99,19 @@
           </p>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend>Комментарий</legend>
+        <fieldset class="program__fields  program__fields--line">
+          <legend class="headline">
+            <span class="headline__bg">Комментарий</span>
+          </legend>
           <p class="program__item  program__item--textarea">
             <textarea name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
 
-        <fieldset class="program__fields">
-          <legend>Производители:</legend>
+        <fieldset class="program__fields  program__fields--line">
+          <legend class="headline">
+            <span class="headline__bg">Производители:</span>
+          </legend>
           <ul class="program__list">
             <li class="program__option">
               <input class="program__input  program__input-checkbox" type="checkbox" name="additional[]" id="sweetener" value="Сахарозаменитель" checked>
