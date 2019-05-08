@@ -24,12 +24,31 @@
     }
 
     @media (min-width: $desktop-width) {
-      position: absolute;
+/*      position: absolute;
       top: 50%;
       max-width: 570px;
       padding: 60px 70px;
       background: $default-color;
-      transform: translate(0, -50%);
+      transform: translate(0, -50%);*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      justify-content: flex-start;
+      padding: 60px 115px;
+      transform: translate(-50%, -50%);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        z-index: -1;
+        width: 570px;
+        height: 200px;
+        background: $default-color;
+        transform: translate(0, -50%);
+      }
     }
   }
 
@@ -53,6 +72,10 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 1.25;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 95px;
     }
   }
 
@@ -107,7 +130,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 85px;
+      margin-top: 85px;
+      padding-top: 0;
       background-color: transparent;
     }
   }
