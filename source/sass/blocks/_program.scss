@@ -89,9 +89,12 @@
       white-space: nowrap;
     }
 
-    input {
+    input,
+    textarea {
       width: 100%;
-      padding: 12px 16px;
+      padding: 12px 40px 12px 16px;
+      color: $fontColor;
+      text-transform: uppercase;
       border: 1px solid rgba(205, 205, 205, 0.5);
 
       &::placeholder {
@@ -107,6 +110,10 @@
         border: 1px solid $fontColor;
         outline: 1px solid $fontColor;
         outline-offset: -2px;
+
+        + svg {
+          fill: $success-color;
+        }
       }
     }
 
@@ -117,6 +124,16 @@
         position: absolute;
         right: 35px;
       }
+
+      &-phone {
+        + svg {
+          right: 32px;
+        }
+      }
+    }
+
+    textarea {
+      min-height: 150px;
     }
   }
 
@@ -165,6 +182,14 @@
       }
     }
 
+    &:checked {
+      + label {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
     &-radio {
       + label {
         &::before,
@@ -183,25 +208,34 @@
           transform: translate(0, -50%);
         }
       }
+    }
 
-      &:checked {
+    &-checkbox {
+      + label {
+        &::after {
+          top: -1px;
+          left: 6px;
+          width: 20px;
+          height: 10px;
+          border: none;
+          border-bottom: 1px solid $success-color;
+          border-left: 1px solid $success-color;
+          opacity: 0;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &:hover,
+      &:focus {
         + label {
+          &::before,
           &::after {
-            opacity: 1;
+            border-color: $success-color;
           }
         }
       }
     }
   }
-
-  /*  .filter-input-radio + label::after {
-      top: 6px;
-      left: 8px;
-      width: 9px;
-      height: 9px;
-      background-color: #c5c5c5;
-      border-radius: 50%;
-    }*/
 
   &__btn {
     margin: 30px 20px 25px;
@@ -214,5 +248,19 @@
     line-height: 1.14;
     text-align: center;
     color: $fontColor;
+  }
+}
+
+.error {
+  input {
+    &:focus {
+      border: 1px solid $danger-secondary;
+      outline: 1px solid $danger-secondary;
+      outline-offset: -2px;
+
+      + svg {
+        fill: $danger-secondary;
+      }
+    }
   }
 }
