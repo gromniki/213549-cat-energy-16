@@ -244,10 +244,18 @@
   }
 
   &__legend {
+    padding: 0 20px;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
     color: $fontColor;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      text-align: center;
+    }
   }
 }
 
