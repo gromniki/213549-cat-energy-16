@@ -85,10 +85,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="program__fields  program__fields--line">
-          <legend class="headline">
-            <span class="headline__bg">Контактные данные (владельца кота)</span>
-          </legend>
+        <fieldset class="program__fields  program__fields--line  program__fields--contacts">
+          <legend class="program__legend  program__legend--long-txt">Контактные данные (владельца кота)</legend>
           <p class="program__item">
             <label for="program-email">E-mail:<sup>*</sup></label>
             <input class="program__item--input  program__item--input-email" id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -106,19 +104,15 @@
         </fieldset>
 
         <fieldset class="program__fields  program__fields--line">
-          <legend class="headline">
-            <span class="headline__bg">Комментарий</span>
-          </legend>
+          <legend>Комментарий</legend>
           <p class="program__item  program__item--textarea">
             <textarea name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
 
         <fieldset class="program__fields  program__fields--line">
-          <legend class="headline">
-            <span class="headline__bg">Производители:</span>
-          </legend>
-          <ul class="program__list">
+          <legend>Дополнительно</legend>
+          <ul class="program__list  program__list--indents">
             <li class="program__option">
               <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="sweetener" value="Сахарозаменитель" checked>
               <label for="sweetener">Сахарозаменитель</label>
@@ -142,13 +136,13 @@
           <button class="btn  program__btn" type="submit">Отправить заявку</button>
         </div>
       </form>
-      <small class="program__legend">
+      <small class="program__reference">
         <sup>*</sup> — Обязательные поля
       </small>
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts  contacts--darker-bg">
     <div class="contacts__wrapper  container">
       <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
       <address class="contacts__text">
