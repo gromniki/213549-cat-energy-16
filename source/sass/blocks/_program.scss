@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 30px;
+    padding: 12px 0 30px;
   }
 
   &__wrapper {
@@ -33,7 +33,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: 1300px;
-      margin: 0 auto 95px;
+      margin: 0 auto 55px;
       padding: 0 40px;
     }
   }
@@ -50,6 +50,25 @@
       font-size: 20px;
       line-height: 1.5;
     }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1300px;
+      margin: 0 auto 15px;
+      padding: 0 40px;
+    }
+  }
+
+  &__column {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      .program__fields {
+        width: 50%;
+      }
+    }
   }
 
   &__fields {
@@ -65,6 +84,14 @@
       padding: 30px 70px;
       font-size: 20px;
       line-height: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 30px 45px;
+
+      &:nth-of-type(-n+2) {
+        width: 50%;
+      }
     }
 
     &--border {
