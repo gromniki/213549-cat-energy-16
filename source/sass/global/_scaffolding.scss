@@ -107,8 +107,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+/*    display: flex;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0 auto;*/
   }
 }

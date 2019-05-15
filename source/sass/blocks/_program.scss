@@ -64,9 +64,20 @@
       align-items: center;
       max-width: 1300px;
       margin: 0 auto;
+      padding: 0 40px;
 
       .program__fields {
         width: 50%;
+        padding: 30px 0;
+
+        &:first-of-type {
+          margin-right: 80px;
+        }
+
+        &--border {
+          margin: 0;
+          padding: 30px 25px;
+        }
       }
     }
   }
@@ -88,10 +99,6 @@
 
     @media (min-width: $desktop-width) {
       padding: 30px 45px;
-
-      &:nth-of-type(-n+2) {
-        width: 50%;
-      }
     }
 
     &--border {
@@ -129,6 +136,18 @@
       @media (min-width: $tablet-width) {
         margin-top: 77px;
         margin-bottom: 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 20px;
+
+        .program__item {
+          width: 50%;
+
+          &:first-of-type {
+            margin-right: 80px;
+          }
+        }
       }
     }
 
@@ -199,6 +218,10 @@
       padding-left: 40px;
       font-size: 36px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 25px -25px;
+    }
   }
 
   &__item {
@@ -257,6 +280,19 @@
         @media (min-width: $tablet-width) {
           right: 88px;
         }
+
+        @media (min-width: $desktop-width) {
+          right: auto;
+          left: 45%;
+        }
+      }
+
+      &-email {
+        + svg {
+          @media (min-width: $desktop-width) {
+
+          }
+        }
       }
 
       &-phone {
@@ -265,6 +301,10 @@
 
           @media (min-width: $tablet-width) {
             right: 85px;
+          }
+
+          @media (min-width: $desktop-width) {
+            left: 90%;
           }
         }
       }
