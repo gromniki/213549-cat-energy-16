@@ -26,11 +26,12 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 50%;
-      left: 50%;
+      right: 0;
+      left: 0;
       z-index: 3;
       justify-content: flex-start;
       padding: 60px 115px;
-      transform: translate(-50%, -50%);
+      transform: translate(0, -50%);
 
       &::before {
         content: "";
