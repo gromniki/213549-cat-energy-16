@@ -17,6 +17,14 @@
     }
   }
 
+  &__container {
+    @media (min-width: $desktop-width) {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+  }
+
   &__title {
     margin: 0 0 25px;
     padding: 0 20px;
@@ -98,7 +106,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 30px 45px;
+      padding: 30px 0;
     }
 
     &--border {
@@ -140,6 +148,7 @@
 
       @media (min-width: $desktop-width) {
         margin-top: 20px;
+        /*padding: 30px 0;*/
 
         .program__item {
           width: 50%;
@@ -156,6 +165,10 @@
 
       @media (min-width: $tablet-width) {
         padding-bottom: 44px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-bottom: 50px;
       }
     }
   }
@@ -189,9 +202,19 @@
         flex-wrap: wrap;
       }
 
+      @media (min-width: $desktop-width) {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
       li {
         @media (min-width: $tablet-width) {
           width: 55%;
+
+          @media (min-width: $desktop-width) {
+            width: 25%;
+          }
 
           &:nth-of-type(-n+2) {
             margin-bottom: 52px;
@@ -199,6 +222,10 @@
 
           &:nth-of-type(even) {
             width: 45%;
+
+            @media (min-width: $desktop-width) {
+              width: 25%;
+            }
           }
         }
       }
@@ -229,6 +256,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     align-items: center;
     margin: 15px 0;
@@ -240,6 +268,10 @@
     label {
       margin-right: 13px;
       white-space: nowrap;
+
+      @media (min-width: $desktop-width) {
+        margin-right: 18px;
+      }
     }
 
     input,
@@ -251,7 +283,7 @@
       border: 1px solid rgba(205, 205, 205, 0.5);
 
       @media (min-width: $tablet-width) {
-        padding: 14px 40px 13px 16px;
+        padding: 14px 50px 13px 16px;
       }
 
       &::placeholder {
@@ -275,19 +307,22 @@
     }
 
     &--input {
-      position: relative;
+      /*position: relative;*/
 
       + svg {
         position: absolute;
-        right: 35px;
+        /*right: 35px;*/
+        /*left: 89%;*/
+        right: 18px;
 
         @media (min-width: $tablet-width) {
-          right: 88px;
+          /*right: 88px;*/
+          /*left: auto;
+          right: 2%;*/
         }
 
         @media (min-width: $desktop-width) {
-          right: auto;
-          left: 45%;
+          /*left: 93%;*/
         }
       }
 
@@ -301,14 +336,15 @@
 
       &-phone {
         + svg {
-          right: 32px;
+          /*right: 32px;*/
 
           @media (min-width: $tablet-width) {
-            right: 85px;
+            /*right: 85px;*/
+
           }
 
           @media (min-width: $desktop-width) {
-            left: 90%;
+
           }
         }
       }
