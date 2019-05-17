@@ -173,16 +173,6 @@
     }
   }
 
-  &__legend {
-    &--long-txt {
-      width: 81%;
-
-      @media (min-width: $tablet-width) {
-        width: auto;
-      }
-    }
-  }
-
   &__list {
     margin: 0;
     padding: 0;
@@ -203,9 +193,10 @@
       }
 
       @media (min-width: $desktop-width) {
+        justify-content: space-between;
         max-width: 1300px;
         margin: 0 auto;
-        padding: 0 40px;
+        padding: 12px 40px 8px;
       }
 
       li {
@@ -213,18 +204,22 @@
           width: 55%;
 
           @media (min-width: $desktop-width) {
-            width: 25%;
+            width: 20%;
           }
 
           &:nth-of-type(-n+2) {
             margin-bottom: 52px;
+
+            @media (min-width: $desktop-width) {
+              margin-bottom: 0;
+            }
           }
 
           &:nth-of-type(even) {
             width: 45%;
 
             @media (min-width: $desktop-width) {
-              width: 25%;
+              width: 20%;
             }
           }
         }
@@ -307,46 +302,9 @@
     }
 
     &--input {
-      /*position: relative;*/
-
       + svg {
         position: absolute;
-        /*right: 35px;*/
-        /*left: 89%;*/
         right: 18px;
-
-        @media (min-width: $tablet-width) {
-          /*right: 88px;*/
-          /*left: auto;
-          right: 2%;*/
-        }
-
-        @media (min-width: $desktop-width) {
-          /*left: 93%;*/
-        }
-      }
-
-      &-email {
-        + svg {
-          @media (min-width: $desktop-width) {
-
-          }
-        }
-      }
-
-      &-phone {
-        + svg {
-          /*right: 32px;*/
-
-          @media (min-width: $tablet-width) {
-            /*right: 85px;*/
-
-          }
-
-          @media (min-width: $desktop-width) {
-
-          }
-        }
       }
     }
 
@@ -500,6 +458,11 @@
       line-height: 1;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 47%;
+      margin-right: 6.5%;
+    }
+
     &-wrapper {
       margin: 0;
       padding: 0 20px;
@@ -508,6 +471,12 @@
         display: flex;
         align-items: center;
         padding: 0 70px;
+      }
+
+      @media (min-width: $desktop-width) {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 40px;
       }
     }
   }
