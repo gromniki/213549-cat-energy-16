@@ -9,6 +9,5 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-source_data/screenshots/
 build/
-source_data/
+source_datas/
