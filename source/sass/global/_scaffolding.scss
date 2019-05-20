@@ -61,7 +61,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
   display: inline-block;
-  padding: 11px 40px;
+  padding: 10px 40px;
   font-family: $fontOswald;
   font-size: 14px;
   line-height: 18px;
@@ -101,4 +101,8 @@ input[type="radio"].visually-hidden {
       color: rgba(68, 68, 68, 0.3);
     }
   }
+}
+
+.index-column {
+  position: relative;
 }

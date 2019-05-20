@@ -64,6 +64,17 @@
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       cursor: pointer;
 
+      &:hover,
+      &:focus {
+        outline: none;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      &:active {
+        border-color: $success-color;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -91,6 +102,16 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       border-bottom: 1px dotted $neutral-secondary;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        border-bottom-style: solid;
+      }
+
+      &:active {
+        border-bottom-color: transparent;
+      }
     }
   }
 }
