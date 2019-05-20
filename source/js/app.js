@@ -19,3 +19,7 @@ showMainMenu.addEventListener("click", function (evt) {
     mainMenu.classList.add("main-nav--closed");
   }
 });
+
+// Слайдер
+var btnPrev = document.querySelector('.js-slide-prev');
+var btnNext = document.querySelector('.js-slide-next');

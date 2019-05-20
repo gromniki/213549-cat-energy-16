@@ -88,8 +88,9 @@
         </div>
 
         <fieldset class="program__fields  program__fields--line  program__fields--contacts">
-          <legend class="program__legend  program__legend--ong-txt">
-            <span>Контактные данные (владельца кота)</span>
+          <div class="program__container">
+          <legend class="program__legend">
+            Контактные данные&nbsp;<br>(владельца кота)
           </legend>
           <div class="program__column">
             <p class="program__item">
@@ -107,11 +108,12 @@
               </svg>
             </p>
           </div>
+          </div>
         </fieldset>
 
         <fieldset class="program__fields  program__fields--line  program__fields--comment">
-          <legend>Комментарий</legend>
           <div class="program__container">
+            <legend class="program__legend">Комментарий</legend>
             <p class="program__item  program__item--textarea">
               <textarea name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
@@ -119,25 +121,27 @@
         </fieldset>
 
         <fieldset class="program__fields  program__fields--line">
-          <legend>Дополнительно</legend>
-          <ul class="program__list  program__list--indents  program__list--flex">
-            <li class="program__option">
-              <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="sweetener" value="Сахарозаменитель" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="program__option">
-              <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="water" value="Питьевая вода">
-              <label for="water">Питьевая вода</label>
-            </li>
-            <li class="program__option">
-              <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="milk" value="Молоко" disabled>
-              <label for="milk">Молоко</label>
-            </li>
-            <li class="program__option">
-              <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="vitamins" value="Витамины">
-              <label for="vitamins">Витамины</label>
-            </li>
-          </ul>
+          <div class="program__container">
+            <legend class="program__legend">Дополнительно</legend>
+            <ul class="program__list  program__list--indents  program__list--flex">
+              <li class="program__option">
+                <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="sweetener" value="Сахарозаменитель" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="program__option">
+                <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="water" value="Питьевая вода">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="program__option">
+                <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="milk" value="Молоко" disabled>
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="program__option">
+                <input class="visually-hidden  program__input  program__input-checkbox" type="checkbox" name="additional[]" id="vitamins" value="Витамины">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
         <div class="program__btn-wrapper">
