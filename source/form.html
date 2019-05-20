@@ -67,7 +67,6 @@
               <input id="program-age" type="text" name="age" placeholder="7" required>
             </p>
           </fieldset>
-
           <fieldset class="program__fields  program__fields--border">
             <legend class="visually-hidden">Вид программы:</legend>
             <ul class="program__list">
@@ -87,41 +86,39 @@
           </fieldset>
         </div>
 
-        <fieldset class="program__fields  program__fields--line  program__fields--contacts">
-          <div class="program__container">
-          <legend class="program__legend">
-            Контактные данные&nbsp;<br>(владельца кота)
-          </legend>
-          <div class="program__column">
-            <p class="program__item">
-              <label for="program-email">E-mail:<sup>*</sup></label>
-              <input class="program__item--input  program__item--input-email" id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="" width="18" height="14">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </p>
-            <p class="program__item  error">
-              <label for="program-phone">Телефон:<sup>*</sup></label>
-              <input class="program__item--input  program__item--input-phone" id="program-phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="" width="21" height="21">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-            </p>
-          </div>
-          </div>
-        </fieldset>
+        <div class="program__fields  program__fields--line  program__fields--contacts">
+          <fieldset class="program__container">
+            <legend class="program__legend">Контактные данные&nbsp;<br>(владельца кота)</legend>
+            <div class="program__column">
+              <p class="program__item">
+                <label for="program-email">E-mail:<sup>*</sup></label>
+                <input class="program__item--input  program__item--input-email" id="program-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="" width="18" height="14">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </p>
+              <p class="program__item  error">
+                <label for="program-phone">Телефон:<sup>*</sup></label>
+                <input class="program__item--input  program__item--input-phone" id="program-phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                <svg class="" width="21" height="21">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </p>
+            </div>
+          </fieldset>
+        </div>
 
-        <fieldset class="program__fields  program__fields--line  program__fields--comment">
-          <div class="program__container">
+        <div class="program__fields  program__fields--line  program__fields--comment">
+          <fieldset class="program__container">
             <legend class="program__legend">Комментарий</legend>
             <p class="program__item  program__item--textarea">
               <textarea name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="program__fields  program__fields--line">
-          <div class="program__container">
+        <div class="program__fields  program__fields--line">
+          <fieldset class="program__container">
             <legend class="program__legend">Дополнительно</legend>
             <ul class="program__list  program__list--indents  program__list--flex">
               <li class="program__option">
@@ -141,8 +138,8 @@
                 <label for="vitamins">Витамины</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
         <div class="program__btn-wrapper">
           <button class="btn  program__btn" type="submit">Отправить заявку</button>
@@ -163,7 +160,7 @@
       </address>
     </div>
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003128!2d30.320858716135753!3d59.93871916905414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557059136288!5m2!1sru!2sru" width="100%" height="400" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003128!2d30.320858716135753!3d59.93871916905414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557059136288!5m2!1sru!2sru" allowfullscreen></iframe>
     </div>
   </section>
 </main>
