@@ -1,7 +1,7 @@
 .main-nav {
   &__toggle {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 6%;
     z-index: 3;
     width: 25px;
@@ -10,55 +10,35 @@
     text-align: left;
     background-color: transparent;
     border: 0;
+    border-top: 2px solid $fontColorSecondary;
     cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: $fontColorSecondary;
+      border-radius: 2px;
+      transition-duration: 0.3s;
+    }
+
+    &::before {
+      top: -10px;
+    }
+
+    &::after {
+      top: 6px;
+    }
 
     @media (min-width: $tablet-width) {
       display: none;
     }
 
-    &--lines {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 25px;
-      height: 2px;
-      background-color: $fontColorSecondary;
-      border-radius: 2px;
-      transform: translate(-50%, -50%);
-      transition-duration: 0.3s;
-
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 2px;
-        background-color: $fontColorSecondary;
-        border-radius: 2px;
-        transition-duration: 0.3s;
-      }
-
-      &::before {
-        top: -8px;
-      }
-
-      &::after {
-        top: 8px;
-      }
-    }
-
     &:hover,
     &:focus {
       outline: none;
-
-      &--lines {
-        background-color: $primary-color;
-
-        &::before,
-        &::after {
-          background-color: $primary-color;
-        }
-      }
     }
   }
 
@@ -72,23 +52,21 @@
 
   &--opened {
     .main-nav__toggle {
-      &--lines {
-        background-color: transparent;
+      border-top: 2px solid transparent;
 
-        &::before,
-        &::after {
-          background-color: $fontColorSecondary;
-        }
+      &::before,
+      &::after {
+        background-color: $fontColorSecondary;
+      }
 
-        &::before {
-          top: 0;
-          transform: rotate(-45deg);
-        }
+      &::before {
+        top: 0;
+        transform: rotate(-45deg);
+      }
 
-        &::after {
-          top: 0;
-          transform: rotate(45deg);
-        }
+      &::after {
+        top: 0;
+        transform: rotate(45deg);
       }
     }
   }
