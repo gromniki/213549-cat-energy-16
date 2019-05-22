@@ -5,7 +5,7 @@
   margin: 0 auto 35px;
   padding: 20px;
   color: $default-color;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center / 100%;
+  background: $success-color url("../img/gift-photo-mobile@1x.jpg") no-repeat center / 100%;
 
   &::before {
     content: "";
@@ -19,21 +19,21 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat center / 100%;
+    background: $success-color url("../img/gift-photo-mobile@2x.jpg") no-repeat center / 100%;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     width: auto;
     height: 200px;
     margin: 30px 4% 75px;
-    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center / 100%;
+    background: $success-color url("../img/gift-photo-tablet@1x.jpg") no-repeat center / 100%;
 
     &::before {
       left: 17%;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat center / 100%;
+      background: $success-color url("../img/gift-photo-tablet@2x.jpg") no-repeat center / 100%;
     }
   }
 
@@ -44,11 +44,11 @@
     left: 0;
     width: 245px;
     margin-bottom: 0;
-    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center / 100%;
+    background: $success-color url("../img/gift-photo-desktop@1x.jpg") no-repeat center / 100%;
     transform: translate(198.5%, 0);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat center / 100%;
+      background: $success-color url("../img/gift-photo-desktop@2x.jpg") no-repeat center / 100%;
     }
   }
 
