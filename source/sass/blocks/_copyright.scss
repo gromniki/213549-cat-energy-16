@@ -9,6 +9,8 @@
   color: $fontColor;
 
   &__link {
+    display: flex;
+    align-items: center;
     color: inherit;
     fill: $neutral-regular;
 

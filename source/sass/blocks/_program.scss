@@ -297,13 +297,6 @@
       }
     }
 
-    &--input {
-      + svg {
-        position: absolute;
-        right: 18px;
-      }
-    }
-
     textarea {
       min-height: 150px;
 
@@ -378,6 +371,11 @@
           opacity: 1;
         }
       }
+    }
+
+    + svg {
+      position: absolute;
+      right: 18px;
     }
 
     &-radio {
