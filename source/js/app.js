@@ -1,5 +1,3 @@
-//import "./picturefill.min";
-
 "use strict";
 
 // Открытие/закрытие основного меню
