@@ -47,6 +47,10 @@
     height: 144px;
     text-align: center;
 
+    &:focus {
+      outline: none;
+    }
+
     @media (min-width: $tablet-width) {
       position: absolute;
       top: -45px;

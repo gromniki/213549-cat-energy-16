@@ -353,8 +353,7 @@
       + label {
         &::before,
         &::after {
-          border-color: $border-fifth;
-          outline: none;
+          border-color: $border-sixth;
         }
       }
     }
@@ -367,6 +366,10 @@
 
     &:checked {
       + label {
+        &::before {
+          border-color: $border-sixth;
+        }
+
         &::after {
           opacity: 1;
         }
@@ -427,7 +430,7 @@
       &:focus {
         + label {
           &::before {
-            border-color: $border-fifth;
+            border-color: $border-sixth;
           }
 
           &::after {
