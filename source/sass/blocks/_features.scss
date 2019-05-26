@@ -93,7 +93,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 50%;
         text-align: left;
       }
@@ -120,8 +120,8 @@
       }
 
       @media (min-width: $desktop-width) {
-        width: 65%;
-        margin-right: 35px;
+        width: 55%;
+        margin-right: 15px;
       }
     }
 
@@ -131,7 +131,10 @@
       }
 
       @media (min-width: $desktop-width) {
-        width: 20%;
+        min-width: 25%;
+        max-width: 40%;
+        width: auto;
+        padding-right: 10px;
       }
     }
   }
